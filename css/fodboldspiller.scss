@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+.flex-ContainerFodboldspillerSPlash {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+
+    position: relative;
+
+    .FodboldspillerSplash {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-image: url(../img/forside/splash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 90px;
+            font-weight: 800;
+            color: white;
+            z-index: 2;
+            margin: 130px 0px;
+        }
+    }
+
+    .SplashOverlay {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.58)
+    }
+
+    .btnArrowDown {
+        z-index: 2;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
+
+.flex-containerMenuer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .ContainerMenu {
+        display: flex;
+        width: 100%;
+        height: 800px;
+        flex-wrap: wrap;
+
+        .FodboldSektion,
+        .NyhederSektion,
+        .EventSektion,
+        .GalleriSektion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, #002366, #001E35);
+            border: 2px white solid;
+
+            .FodboldSvg,
+            .NyhederSvg,
+                {
+                width: 20%;
+                height: 20%;
+                margin-bottom: 50px;
+            }
+
+            .EventSvg,
+            .GalleriSvg {
+                height: 37%;
+                width: 20%;
+                object-fit: cover;
+            }
+
+            a {
+                width: 40%;
+
+
+                button {
+                    font-size: 22px;
+                    background-color: transparent;
+                    border: 2px solid white;
+                    color: white;
+                    padding: 20px 0px;
+
+                    width: 100%;
+                    transition: all 1s;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+
+        }
+    }
+
+
+}

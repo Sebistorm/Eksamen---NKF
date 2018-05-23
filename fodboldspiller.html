@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fodboldspiller</title>
+
+    <!-- include the polyfill for WebComponents -->
+    <script src="script/vendor/webcomponents-lite.js"></script>
+    <link rel="import" href="templates/navbar.html" id="navbar-tmplFile">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bundle.css">
+
+
+</head>
+
+<body class="Fodboldspiller">
+
+    <navbar-section>
+        this is a navbar Element
+    </navbar-section>
+
+    <section class="flex-ContainerFodboldspillerSPlash">
+        <div class="FodboldspillerSplash">
+            <h1>Fodboldspiller</h1>
+            <div class="SplashOverlay"></div>
+            <img src="img/grafik/arrowDown.svg" alt="arrow down" class="btnArrowDown">
+        </div>
+    </section>
+
+    <section class="flex-containerMenuer">
+        <div class="ContainerMenu">
+            <div class="FodboldSektion">
+                <img src="img/grafik/fodbold.svg" alt="fodbold" class="FodboldSvg">
+                <a href=""><button>Fodbold</button></a>
+            </div>
+            <div class="NyhederSektion">
+                <img src="img/grafik/news.svg" alt="nyheder" class="NyhederSvg">
+                <a href=""><button>Nyheder</button></a>
+            </div>
+            <div class="EventSektion">
+                <img src="img/grafik/event.svg" alt="Event" class="EventSvg">
+                <a href=""><button>Events</button></a>
+            </div>
+            <div class="GalleriSektion">
+                <img src="img/grafik/galleri.svg" alt="Galleri" class="GalleriSvg">
+                <a href=""><button>Galleri</button></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script/main.js"></script>
+
+    <script>
+        let btnArrowDown = document.querySelector(".btnArrowDown");
+
+        btnArrowDown.addEventListener("click", e => {
+            let nextSektion = document.querySelector(".flex-containerMenuer");
+            nextSektion.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        })
+    </script>
+</body>
+
+</html>

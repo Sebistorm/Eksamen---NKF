@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box; }
+
+.Index {
+  margin: 0px;
+  overflow-y: hidden; }
+
+.LandingpageContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px; }
+  .LandingpageContent .LandingpageFodboldspiller {
+    background-image: url(../img/landingpage/fodboldspiller.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .LandingpageContent .LandingpageFodboldspiller .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageFodboldspiller h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageFodboldspiller .FodboldspillerPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpageTraener {
+    background-image: url(../img/landingpage/traener.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpageTraener .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageTraener h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageTraener .TraenerPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpageKlubben {
+    background-image: url(../img/landingpage/klubben.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpageKlubben .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageKlubben h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageKlubben .KlubbenPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpagePraktiskInfo {
+    background-image: url(../img/landingpage/praktiskInfo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpagePraktiskInfo .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpagePraktiskInfo h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpagePraktiskInfo .PraktiskInfoPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+
+@media screen and (max-width: 1025px) {
+  .LandingpageContent .LandingpageFodboldspiller .FodboldspillerPunktListe,
+  .LandingpageContent .LandingpageTraener .TraenerPunktListe,
+  .LandingpageContent .LandingpageKlubben .KlubbenPunktListe,
+  .LandingpageContent .LandingpagePraktiskInfo .PraktiskInfoPunktListe {
+    font-size: 2.5vw; } }
+body {
+  margin: 0; }
+
+.flex-ContainerFodboldspillerSPlash {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  position: relative; }
+  .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(../img/forside/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash h1 {
+      font-size: 90px;
+      font-weight: 800;
+      color: white;
+      z-index: 2;
+      margin: 130px 0px; }
+  .flex-ContainerFodboldspillerSPlash .SplashOverlay {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.58); }
+  .flex-ContainerFodboldspillerSPlash .btnArrowDown {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    cursor: pointer; }
+
+.flex-containerMenuer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .flex-containerMenuer .ContainerMenu {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-wrap: wrap; }
+    .flex-containerMenuer .ContainerMenu .FodboldSektion,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion,
+    .flex-containerMenuer .ContainerMenu .EventSektion,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 50%;
+      background: radial-gradient(circle, #002366, #001E35);
+      border: 2px white solid; }
+      .flex-containerMenuer .ContainerMenu .FodboldSektion .FodboldSvg,
+      .flex-containerMenuer .ContainerMenu .FodboldSektion .NyhederSvg,
+      .flex-containerMenuer .ContainerMenu .NyhederSektion .FodboldSvg,
+      .flex-containerMenuer .ContainerMenu .NyhederSektion .NyhederSvg,
+      .flex-containerMenuer .ContainerMenu .EventSektion .FodboldSvg,
+      .flex-containerMenuer .ContainerMenu .EventSektion .NyhederSvg,
+      .flex-containerMenuer .ContainerMenu .GalleriSektion .FodboldSvg,
+      .flex-containerMenuer .ContainerMenu .GalleriSektion .NyhederSvg {
+        width: 20%;
+        height: 20%;
+        margin-bottom: 50px; }
+      .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
+      .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
+      .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
+      .flex-containerMenuer .ContainerMenu .NyhederSektion .GalleriSvg,
+      .flex-containerMenuer .ContainerMenu .EventSektion .EventSvg,
+      .flex-containerMenuer .ContainerMenu .EventSektion .GalleriSvg,
+      .flex-containerMenuer .ContainerMenu .GalleriSektion .EventSvg,
+      .flex-containerMenuer .ContainerMenu .GalleriSektion .GalleriSvg {
+        height: 37%;
+        width: 20%;
+        object-fit: cover; }
+      .flex-containerMenuer .ContainerMenu .FodboldSektion a,
+      .flex-containerMenuer .ContainerMenu .NyhederSektion a,
+      .flex-containerMenuer .ContainerMenu .EventSektion a,
+      .flex-containerMenuer .ContainerMenu .GalleriSektion a {
+        width: 40%; }
+        .flex-containerMenuer .ContainerMenu .FodboldSektion a button,
+        .flex-containerMenuer .ContainerMenu .NyhederSektion a button,
+        .flex-containerMenuer .ContainerMenu .EventSektion a button,
+        .flex-containerMenuer .ContainerMenu .GalleriSektion a button {
+          font-size: 22px;
+          background-color: transparent;
+          border: 2px solid white;
+          color: white;
+          padding: 20px 0px;
+          width: 100%;
+          transition: all 1s;
+          cursor: pointer; }
+        .flex-containerMenuer .ContainerMenu .FodboldSektion a button:hover,
+        .flex-containerMenuer .ContainerMenu .NyhederSektion a button:hover,
+        .flex-containerMenuer .ContainerMenu .EventSektion a button:hover,
+        .flex-containerMenuer .ContainerMenu .GalleriSektion a button:hover {
+          background-color: white;
+          color: black; }
+
+/*# sourceMappingURL=bundle.css.map */

@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box; }
+
+.Index {
+  margin: 0px;
+  overflow-y: hidden; }
+
+.LandingpageContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px; }
+  .LandingpageContent .LandingpageFodboldspiller {
+    background-image: url(../img/landingpage/fodboldspiller.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .LandingpageContent .LandingpageFodboldspiller .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageFodboldspiller h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageFodboldspiller .FodboldspillerPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpageTraener {
+    background-image: url(../img/landingpage/traener.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpageTraener .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageTraener h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageTraener .TraenerPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpageKlubben {
+    background-image: url(../img/landingpage/klubben.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpageKlubben .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpageKlubben h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpageKlubben .KlubbenPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+  .LandingpageContent .LandingpagePraktiskInfo {
+    background-image: url(../img/landingpage/praktiskInfo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; }
+    .LandingpageContent .LandingpagePraktiskInfo .LandingpageOverlay {
+      background-color: rgba(0, 35, 102, 0.4);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+    .LandingpageContent .LandingpagePraktiskInfo h2 {
+      color: white;
+      z-index: 2;
+      font-size: 5vw;
+      font-weight: 800; }
+    .LandingpageContent .LandingpagePraktiskInfo .PraktiskInfoPunktListe {
+      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.5vw;
+      z-index: 2;
+      line-height: 2; }
+
+@media screen and (max-width: 1025px) {
+  .LandingpageContent .LandingpageFodboldspiller .FodboldspillerPunktListe,
+  .LandingpageContent .LandingpageTraener .TraenerPunktListe,
+  .LandingpageContent .LandingpageKlubben .KlubbenPunktListe,
+  .LandingpageContent .LandingpagePraktiskInfo .PraktiskInfoPunktListe {
+    font-size: 2.5vw; } }
+
+/*# sourceMappingURL=landingpage.css.map */

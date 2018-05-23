@@ -1,0 +1,457 @@
+<template id="navbar-section-tmpl">
+    <style>
+.wrapper {
+  display: none; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  height: 120px; }
+  .topnav .BetterHomeLogo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end; }
+    .topnav .BetterHomeLogo .BetterHomeLogoImg {
+      background-image: url(../img/grafik/logo_400_farve_png.png);
+      height: 47px;
+      width: 240px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 59px;
+      padding-bottom: 38px; }
+  .topnav .MenuPunkterParent {
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 29px;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    justify-content: space-around; }
+    .topnav .MenuPunkterParent a {
+      padding-bottom: 5px;
+      display: block;
+      color: #000;
+      text-align: center;
+      padding: 13px 8px;
+      margin: 0px 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Open Sans, sans-serif; }
+    .topnav .MenuPunkterParent a:hover {
+      background-color: #ddd;
+      color: black; }
+    .topnav .MenuPunkterParent .IndeklimaKnap,
+    .topnav .MenuPunkterParent .EnergiKnap {
+      background-color: #6ba851;
+      color: #fff;
+      border-radius: 1px;
+      width: 150px; }
+  .topnav .icon {
+    display: none; }
+    .topnav .icon .burgermenu {
+      width: 35px;
+      height: 5px;
+      background-color: #575756;
+      margin: 6px 0; }
+
+.active {
+  border-bottom: 2px solid green;
+  color: white; }
+
+@media screen and (max-width: 1457px) {
+  .topnav .MenuPunkterParent a {
+    margin: 0; }
+
+  .topnav .BetterHomeLogo .BetterHomeLogoImg {
+    margin-left: 20px; } }
+@media screen and (max-width: 1401px) {
+  .topnav .MenuPunkterParent .IndeklimaKnap,
+  .topnav .MenuPunkterParent .EnergiKnap {
+        background-color: unset;
+    color: #6ba851;
+    width: unset;
+    font-weight: 800; } 
+		.topnav .MenuPunkterParent a {
+		font-size: 15px;
+	}
+		}
+@media screen and (max-width: 1025px) {
+  .topnav {
+    height: 93px; }
+    .topnav .icon {
+      position: absolute;
+      right: 31px;
+      top: 42px;
+      float: right;
+      display: block; }
+    .topnav .BetterHomeLogo .BetterHomeLogoImg {
+      height: 32px;
+      width: 176px;
+      padding-bottom: 28px;
+      margin-left: 32px; }
+
+  .topnav .MenuPunkterParent {
+    display: none; }
+
+  .wrapper.responsive {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    background-image: url(./img/navbar/navbarCover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 62px; }
+    .wrapper.responsive .NavbarOverlay {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background: #97bf5e;
+      /* For browsers that do not support gradients */
+      background: linear-gradient(to right, rgba(151, 191, 94, 0.9), rgba(107, 168, 81, 0.9));
+      /* Standard syntax (must be last) */ }
+      .wrapper.responsive .NavbarOverlay .MenuH3Parent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 90px;
+        margin-bottom: 38px; }
+        .wrapper.responsive .NavbarOverlay .MenuH3Parent h3 {
+          font-family: Open Sans, sans-serif;
+          font-size: 24px;
+          float: none;
+          display: block;
+          text-align: center;
+          padding-bottom: 9px;
+          color: #fbfbfb;
+          border-bottom: 2px solid #fbfbfb;
+          width: 85.5px;
+          margin-bottom: 0px; }
+      .wrapper.responsive .NavbarOverlay .MenuPunkterParent a {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 37px;
+        color: #fbfbfb;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Open Sans, sans-serif;
+        letter-spacing: 4px; }
+      .wrapper.responsive .NavbarOverlay .MenuPunkterParent .IndeklimaKnapParent {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .wrapper.responsive .NavbarOverlay .MenuPunkterParent .IndeklimaKnapParent .IndeklimaKnap {
+          width: 230px;
+          font-size: 12.5px;
+          font-weight: 600;
+          padding: 18px 0;
+          background-color: #fbfbfb;
+          color: #6ba851;
+          margin-bottom: 38px; }
+      .wrapper.responsive .NavbarOverlay .KontaktInfo {
+        width: 100%;
+        display: block;
+        font-family: Open Sans, sans-serif;
+        text-align: center;
+        color: white;
+        margin-bottom: 30px; }
+        .wrapper.responsive .NavbarOverlay .KontaktInfo .Navn {
+          font-size: 18px;
+          font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 3px; }
+        .wrapper.responsive .NavbarOverlay .KontaktInfo .Info {
+          font-size: 16px; }
+          .wrapper.responsive .NavbarOverlay .KontaktInfo .Info p {
+            margin: 0px 0px 2px 0px; }
+      .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier {
+        display: flex;
+        height: 80px;
+        width: 100%; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
+          display: flex;
+          justify-content: flex-end;
+          width: 512px;
+          height: 80px;
+          width: 50%;
+          margin-right: 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
+            background-image: url(./img/grafik/facebook.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Youtube {
+          display: flex;
+          justify-content: flex-start;
+          height: 80px;
+          width: 50%;
+          margin-left: 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Youtube .YoutubeImg {
+            background-image: url(./img/grafik/youtube.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px; }
+
+  .active {
+    border-bottom: 2px solid transparent;
+    color: black; } }
+@media screen and (max-width: 751px) {
+  .topnav {
+    height: 123px; }
+    .topnav .icon {
+      right: 32px;
+      top: 42px; }
+      .topnav .icon .burgermenu {
+        width: 53px;
+        height: 8px; }
+    .topnav .BetterHomeLogo .BetterHomeLogoImg {
+      height: 48px;
+      width: 268px;
+      padding-bottom: 40px; }
+
+  .wrapper.responsive {
+    height: 100%; }
+    .wrapper.responsive .NavbarOverlay {
+      height: 100%; }
+      .wrapper.responsive .NavbarOverlay .MenuH3Parent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 207px;
+        margin-bottom: 83px; }
+        .wrapper.responsive .NavbarOverlay .MenuH3Parent h3 {
+          font-size: 48px;
+          width: 150px;
+          top: 156px;
+          margin-top: 0; }
+      .wrapper.responsive .NavbarOverlay .MenuPunkterParent {
+        width: 100%; }
+        .wrapper.responsive .NavbarOverlay .MenuPunkterParent a {
+          font-size: 28px;
+          margin-bottom: 81px; }
+        .wrapper.responsive .NavbarOverlay .MenuPunkterParent .IndeklimaKnapParent .IndeklimaKnap {
+          font-size: 24px;
+          padding: 26px 22px;
+          width: 80%;
+          max-width: 308px;
+          margin-top: 0px;
+          margin-bottom: 72px; }
+        .wrapper.responsive .NavbarOverlay .MenuPunkterParent .Kontakt {
+          margin-bottom: 57px; }
+      .wrapper.responsive .NavbarOverlay .KontaktInfo {
+        top: 816px; }
+        .wrapper.responsive .NavbarOverlay .KontaktInfo .Navn {
+          font-size: 22px; }
+        .wrapper.responsive .NavbarOverlay .KontaktInfo .Info {
+          font-size: 20px; }
+      .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier {
+        top: 996px;
+        margin-bottom: 40px; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
+          margin-right: 18px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
+            width: 65px;
+            height: 65px; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Youtube {
+          height: 80px;
+          margin-left: 18px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Youtube .YoutubeImg {
+            width: 65px;
+            height: 65px; } }
+		
+		@media screen and (max-width: 501px) {
+  .wrapper.responsive .NavbarOverlay .MenuH3Parent {
+    height: 85px;
+    margin-bottom: 30px; }
+    .wrapper.responsive .NavbarOverlay .MenuH3Parent h3 {
+      font-size: 40px;
+      width: 130px; }
+  .wrapper.responsive .NavbarOverlay .MenuPunkterParent a {
+    font-size: 26px;
+    margin-bottom: 25px; }
+  .wrapper.responsive .NavbarOverlay .MenuPunkterParent .IndeklimaKnapParent .IndeklimaKnap {
+    margin-bottom: 60px; }
+  .wrapper.responsive .NavbarOverlay .MenuPunkterParent .Kontakt {
+    margin-bottom: 35px; } } 
+		
+@media screen and (max-width: 401px) {
+  .topnav .icon {
+    right: 0px; }
+  .topnav .BetterHomeLogo .BetterHomeLogoImg {
+    height: 48px;
+    width: 228px;
+    padding-bottom: 36px;
+    margin-left: 8px; } }
+@media screen and (max-width: 385px) {
+  .wrapper.responsive .NavbarOverlay .MenuPunkterParent .IndeklimaKnapParent .IndeklimaKnap {
+    padding: 14px 5px; } }
+@media screen and (max-width: 301px) {
+  .topnav .icon {
+    right: 0px; }
+  .topnav .BetterHomeLogo .BetterHomeLogoImg {
+    height: 41px;
+    width: 178px;
+    padding-bottom: 36px; } }
+    </style>
+    
+    
+     <header>
+        <nav class="topnav" id="myTopnav">
+            <div class="BetterHomeLogo">
+                <a href="index.html">
+                    <div class="BetterHomeLogoImg"></div>
+                </a>
+            </div>
+            <div class="MenuPunkterParent" id="container-menuPunkter">
+                <a href="hvad-tilbyder-vi.html" class="HvadTilbyderVi">Fodbold</a>
+                <a href="pakker.html" class="Pakker">Nyheder</a>
+                <a href="artikler.html" class="Artikler">Events</a>
+                <a href="om.html" class="OmBetterHome">Galleri</a>
+                <a href="kontakt.html" class="Kontakt">Kontakt
+                </a>
+            </div>
+            <div id="container-burger" class="icon">
+                <div class="burgermenu"></div>
+                <div class="burgermenu"></div>
+                <div class="burgermenu"></div>
+            </div>
+        </nav>
+       
+    </header>   
+    
+    
+        <div class="wrapper" id="tabletMobilwrapper">
+
+        <div class="NavbarOverlay">
+            <div class="MenuH3Parent">
+                <h3>Menu</h3>
+            </div>
+            <div class="MenuPunkterParent">
+ 				<a href="hvad-tilbyder-vi.html">Fodbold</a>
+                <a href="pakker.html">Nyheder</a>
+                <a href="artikler.html">Events</a>
+                <a href="om.html">Galleri</a>
+                <a class="Kontakt" href="kontakt.html">KONTAKT</a>
+            </div>
+
+            <div class="KontaktInfo">
+                <p class="Navn">BETTERHOME</p>
+                <div class="Info">
+                    <P>Banestrøget 23 1.sal nr. 5</P>
+                    <p>DK-2630 Høje Tåstrup</p>
+                    <p>T: 35 30 04 62</p>
+                </div>
+            </div>
+
+            <div class="flex-containerSocialeMedier">
+                <div class="Facebook">
+                    <a target="_blank" href="https://da-dk.facebook.com/BetterHome.Today/">
+                        <div class="FacebookImg"></div>
+                    </a>
+                </div>
+                <div class="Youtube">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCbE2QI4Zu6ZBiXnbkdKJ_dA">
+                        <div class="YoutubeImg"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</template>
+
+<script>
+    (function() {
+        let thisImportDoc = document.currentScript.ownerDocument;
+
+        class NavbarSection extends HTMLElement {
+            constructor() {
+                super();
+            }
+
+            static get template() {
+                if (!this._template) {
+                    this._template = thisImportDoc.querySelector("#navbar-section-tmpl");
+                }
+                return this._template;
+            }
+
+            connectedCallback() {
+                //				console.log("Navbar på siden");
+
+                let shadowRoot = this.attachShadow({
+                    mode: "open"
+                });
+
+                let tmpl = NavbarSection.template;
+                shadowRoot.appendChild(document.importNode(tmpl.content, true));
+
+                // custom javascript start
+
+                let btnBurger = shadowRoot.getElementById("container-burger");
+                btnBurger.addEventListener("click", function() {
+                    // do something
+                    let btnBurgerWrapper = shadowRoot.getElementById("tabletMobilwrapper");
+
+                    btnBurgerWrapper.classList.toggle("responsive");
+                });
+
+                (function setActive() {
+                    let aObj = shadowRoot.getElementById('container-menuPunkter').getElementsByTagName('a');
+                    //console.log(aObj)
+                    for (let i = 0; i < aObj.length - 2; i++) {
+                        if (document.location.href.indexOf(aObj[i].href) >= 0) {
+                            aObj[i].className = 'active';
+                        }
+                    }
+                })();
+
+
+                if (window.matchMedia("(max-width: 1400px)").matches) {
+                    /* the viewport is at least 1160 pixels wide */
+                    //	console.log("resize!")
+                    // Ændre menu teksten - OM BETTERHOME --> BETTERHOME
+                    let omBetterHome = shadowRoot.querySelector(".OmBetterHome");
+                    omBetterHome.innerHTML = "OM";
+
+
+                }
+                // custom javascript slut
+
+                const supportsNativeShadowDom = !!HTMLElement.prototype.attachShadow;
+                if (!supportsNativeShadowDom) {
+                    ShadyCSS.applyStyle(this);
+                }
+            }
+
+            disconnectedCallback() {
+                console.log("Navbar ikke på siden");
+            }
+
+            adoptedCallback() {
+                console.log("Navbar adopted in page");
+            }
+
+            attributeChangedCallback(name, oldValue, newValue) {
+                console.log("footer attr: " + name + " changed from '" +
+                    oldValue + "' to '" + newValue + "'");
+            }
+        }
+
+        ShadyCSS.prepareTemplate(NavbarSection.template, "navbar-section");
+        customElements.define("navbar-section", NavbarSection);
+
+    })();
+
+</script>
