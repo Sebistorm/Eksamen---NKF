@@ -1,0 +1,365 @@
+.flex-ContainerFodboldspillerSPlash {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+
+    position: relative;
+
+    .FodboldSplash {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/fodbold/fodboldSplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 90px;
+            font-weight: 800;
+            color: $primary-white;
+            z-index: 2;
+            margin: 230px 0px;
+        }
+    }
+
+    .SplashOverlay {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.58)
+    }
+
+    .btnArrowDown {
+        z-index: 2;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
+
+
+.flex-ContainerFodbold {
+    display: flex;
+    justify-content: center;
+
+    .ContainerFodbold {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+
+        a {
+            text-decoration: none;
+            width: 33.333%;
+            overflow: hidden;
+        }
+
+        .Fodbold1Holdet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/1holdet.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .Fodbold1Holdet:hover,
+        .FodboldDrenge:hover,
+        .FodboldPiger:hover,
+        .FodboldSenior:hover,
+        .FodboldKvindeSenior:hover,
+        .FodboldVeteraner:hover,
+        .FodboldTraeningTidspunkter:hover,
+        .FodboldMixTeam:hover,
+        .FodboldKampeResultater:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .FodboldDrenge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/drenge.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldPiger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/piger.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldSenior {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/senior.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldKvindeSenior {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/kvindeSenior.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldVeteraner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/veteraner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldMixTeam {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/noProfilePic.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+            background-color: $primary-blue;
+
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldTraeningTidspunkter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/traeningstider.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+            background-color: $primary-blue;
+
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+
+        .FodboldKampeResultater {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/fodbold/kampeResultater.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            position: relative;
+            background-color: $primary-blue;
+
+
+
+            h2 {
+                font-size: 30px;
+                color: $primary-white;
+                z-index: 2;
+            }
+
+            .FodboldOverlay {
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .flex-ContainerFodbold .ContainerFodbold a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .flex-ContainerFodbold .ContainerFodbold a {
+        width: 100%;
+    }
+}

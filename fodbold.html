@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fodboldspiller</title>
+
+    <!-- include the polyfill for WebComponents -->
+    <script src="script/vendor/webcomponents-lite.js"></script>
+    <link rel="import" href="templates/navbar.html" id="navbar-tmplFile">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bundle.css">
+
+
+</head>
+
+<body class="Fodboldspiller">
+
+    <navbar-section>
+        this is a navbar Element
+    </navbar-section>
+
+    <section class="flex-ContainerFodboldspillerSPlash">
+        <div class="FodboldSplash">
+            <h1>Fodbold</h1>
+            <div class="SplashOverlay"></div>
+            <img src="img/grafik/arrowDown.svg" alt="arrow down" class="btnArrowDown">
+        </div>
+    </section>
+
+
+    <section class="flex-ContainerFodbold">
+        <div class="ContainerFodbold">
+            <a href="1holdet.html">
+                <div class="Fodbold1Holdet">
+                    <h2>1.Holdet</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldDrenge">
+                    <h2>Drenge</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldPiger">
+                    <h2>Piger</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldSenior">
+                    <h2>Senior</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldKvindeSenior">
+                    <h2>Kvindesenior</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldVeteraner">
+                    <h2>Veteraner</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldTraeningTidspunkter">
+                    <h2>Træningstidpunkter</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldMixTeam">
+                    <h2>Mix Team</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="FodboldKampeResultater">
+                    <h2>kampe & Resultater</h2>
+                    <div class="FodboldOverlay"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="script/main.js"></script>
+
+    <script>
+        let btnArrowDown = document.querySelector(".btnArrowDown");
+
+        btnArrowDown.addEventListener("click", e => {
+            let nextSektion = document.querySelector(".flex-ContainerFodbold");
+            nextSektion.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        })
+    </script>
+</body>
+
+</html>

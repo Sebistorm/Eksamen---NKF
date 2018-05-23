@@ -25,32 +25,21 @@
     </navbar-section>
 
     <section class="flex-ContainerFodboldspillerSPlash">
-        <div class="FodboldspillerSplash">
-            <h1>Fodboldspiller</h1>
+        <div class="foorsteHoldetSplash">
+            <h1>1.Holdet</h1>
             <div class="SplashOverlay"></div>
             <img src="img/grafik/arrowDown.svg" alt="arrow down" class="btnArrowDown">
         </div>
     </section>
 
-    <section class="flex-containerMenuer">
-        <div class="ContainerMenu">
-            <div class="FodboldSektion">
-                <img src="img/grafik/fodbold.svg" alt="fodbold" class="FodboldSvg">
-                <a href="fodbold.html"><button>Fodbold</button></a>
-            </div>
-            <div class="NyhederSektion">
-                <img src="img/grafik/news.svg" alt="nyheder" class="NyhederSvg">
-                <a href=""><button>Nyheder</button></a>
-            </div>
-            <div class="EventSektion">
-                <img src="img/grafik/event.svg" alt="Event" class="EventSvg">
-                <a href=""><button>Events</button></a>
-            </div>
-            <div class="GalleriSektion">
-                <img src="img/grafik/galleri.svg" alt="Galleri" class="GalleriSvg">
-                <a href=""><button>Galleri</button></a>
-            </div>
+    <section class="flex-ContainerSpillerMenu">
+        <div class="SpillerMenuContainer">
+            <div class="SpillerneBtn SpillerMenuFokus">Spillerne</div>
+            <div class="StabenBtn">Staben</div>
+            <div class="StillingBtn">Stilling</div>
+            <div class="KommendeKampe">Kommende Kampe</div>
         </div>
+
     </section>
 
 
@@ -61,12 +50,13 @@
         let btnArrowDown = document.querySelector(".btnArrowDown");
 
         btnArrowDown.addEventListener("click", e => {
-            let nextSektion = document.querySelector(".flex-containerMenuer");
+            let nextSektion = document.querySelector(".flex-ContainerFodbold");
             nextSektion.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
         })
+
     </script>
 </body>
 

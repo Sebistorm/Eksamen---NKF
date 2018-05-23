@@ -12,6 +12,11 @@
     flex-wrap: wrap;
     margin: 0px;
 
+    a {
+        text-decoration: none;
+    }
+
+
     .LandingpageFodboldspiller {
         background-image: url(../img/landingpage/fodboldspiller.jpg);
         background-repeat: no-repeat;

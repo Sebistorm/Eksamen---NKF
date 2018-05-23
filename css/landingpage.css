@@ -9,6 +9,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0px; }
+  .LandingpageContent a {
+    text-decoration: none; }
   .LandingpageContent .LandingpageFodboldspiller {
     background-image: url(../img/landingpage/fodboldspiller.jpg);
     background-repeat: no-repeat;
