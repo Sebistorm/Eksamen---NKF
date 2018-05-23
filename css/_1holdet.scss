@@ -47,24 +47,223 @@
 .flex-ContainerSpillerMenu {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 50px 0px;
 
     .SpillerMenuContainer {
         display: flex;
-        border: $primary-blue solid 1px;
+        border: black solid 2px;
 
         .SpillerneBtn,
         .StabenBtn,
         .StillingBtn,
         .KommendeKampe {
             font-size: 30px;
-            border: $primary-blue solid 1px;
+            border: black solid 2px;
             padding: 10px 20px;
             color: black;
+            transition: all 1s;
+            cursor: pointer;
+        }
+
+        .SpillerneBtn:hover,
+        .StabenBtn:hover,
+        .StillingBtn:hover,
+        .KommendeKampe:hover {
+            background-color: grey;
+            color: $primary-white;
         }
 
         .SpillerMenuFokus {
             font-weight: 800;
         }
     }
+}
+
+.flex-Container1Holdet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+
+
+    .Container1Holdet,
+    .Container1HoldetStaben {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 1024px;
+        width: 80vw;
+
+        .Maalmaand,
+        .Forsvar,
+        .Midtbane,
+        .Angriber,
+        .Staben {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 48px;
+                margin: 0px 0px 20px 1%;
+            }
+
+            .MaalmaandContainer,
+            .ForsvarContainer,
+            .MidtbaneContainer,
+            .AngriberContainer,
+            .StabenContainer {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .Spiller,
+                .Staben {
+                    background: radial-gradient(circle, $primary-blue, $secondaryGradient-blue);
+                    width: 23%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 1%;
+                    margin-left: 1%;
+                    border-radius: 8%;
+                    border: 6px grey solid;
+                    margin-bottom: 20px;
+
+                    .SpillerImg,
+                    .StabenImg {
+                        width: 80%;
+                        height: auto;
+                        margin-top: 10px;
+                    }
+
+                    .SpillerNavn,
+                    .StabenNavn {
+                        font-size: 22px;
+                        color: white;
+                        margin: 7px 0px 15px;
+                        padding: 0px 10px;
+                        text-align: center;
+                    }
+
+
+                    .StabenMailContainer,
+                    .StabenMobilContainer {
+                        font-size: 22px;
+                        color: white;
+                        margin: 0px 0px 15px;
+                        padding: 0px 10px;
+                        text-align: center;
+
+                        .StabenMobilSpan,
+                        .StabenEmailSpan {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .flex-ContainerSpillerMenu {
+        .SpillerMenuContainer {
+            width: 80vw;
+            max-width: 700px;
+
+            .SpillerneBtn {
+                width: 24%;
+                max-width: 160px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+
+            .StabenBtn {
+                width: 20%;
+                max-width: 160px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+
+            .StillingBtn {
+                width: 20%;
+                max-width: 160px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+
+            .KommendeKampe {
+                width: 40%;
+                max-width: 280px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .flex-Container1Holdet .Container1Holdet .Maalmaand .MaalmaandContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Forsvar .ForsvarContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Midtbane .MidtbaneContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Angriber .AngriberContainer .Spiller,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width:811px) {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer {
+        flex-direction: column;
+
+        .SpillerneBtn,
+        .StabenBtn,
+        .StillingBtn,
+        .KommendeKampe {
+            width: 100%;
+            font-size: 30px;
+            max-width: unset;
+        }
+
+    }
+
+    .flex-Container1Holdet .Container1Holdet .Maalmaand .MaalmaandContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Forsvar .ForsvarContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Midtbane .MidtbaneContainer .Spiller,
+    .flex-Container1Holdet .Container1Holdet .Angriber .AngriberContainer .Spiller,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:386px) {
+    .flex-Container1Holdet .Container1Holdet .Maalmaand .MaalmaandContainer .Spiller .SpillerNavn,
+    .flex-Container1Holdet .Container1Holdet .Forsvar .ForsvarContainer .Spiller .SpillerNavn,
+    .flex-Container1Holdet .Container1Holdet .Midtbane .MidtbaneContainer .Spiller .SpillerNavn,
+    .flex-Container1Holdet .Container1Holdet .Angriber .AngriberContainer .Spiller .SpillerNavn,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben .StabenNavn,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben .StabenMailContainer,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben .StabenMobilContainer {
+        font-size: 16px;
+    }
+
 }

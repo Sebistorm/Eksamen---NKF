@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/bundle.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
 </head>
 
@@ -39,8 +42,72 @@
             <div class="StillingBtn">Stilling</div>
             <div class="KommendeKampe">Kommende Kampe</div>
         </div>
-
     </section>
+
+    <!--    <template class="temp_1holdet"> 
+			<div class="Spiller">
+				<img src="" alt="" class="SpillerImg">
+				<p class="SpillerNavn">DATA_NAVN</p>
+			</div>
+	</template>-->
+
+    <section id="forsteHoldet" class="flex-Container1Holdet">
+        <div class="Container1Holdet">
+            <div class="Maalmaand">
+                <h2>Målmænd</h2>
+                <div class="MaalmaandContainer">
+                </div>
+            </div>
+            <div class="Forsvar">
+                <h2>Forsvar</h2>
+                <div class="ForsvarContainer">
+                </div>
+            </div>
+            <div class="Midtbane">
+                <h2>Midtbane</h2>
+                <div class="MidtbaneContainer">
+                </div>
+            </div>
+            <div class="Angriber">
+                <h2>Angriber</h2>
+                <div class="AngriberContainer">
+                </div>
+            </div>
+        </div>
+
+        <div class="Container1HoldetStaben">
+            <div class="Staben">
+                <h2>Staben</h2>
+                <div class="StabenContainer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <template class="temp_1holdet">
+            <div class="Spiller">
+                <img src="img/fodbold/noProfilePic.png" alt="" class="SpillerImg">
+                <p class="SpillerNavn">Sebastian Storm</p>
+            </div>
+        </template>
+
+    <template class="temp_1holdetStaben">
+        
+            <div class="Staben">
+                <img src="img/fodbold/noProfilePic.png" alt="" class="StabenImg">
+                <p class="StabenNavn">Sebastian Storm</p>
+                <div class="StabenMailContainer"><i class="far fa-envelope"></i> <span class="StabenEmailSpan">DATA_EMAIL</span></div>
+                <div class="StabenMobilContainer"><i class="fas fa-mobile-alt"></i> <span class="StabenMobilSpan">DATA_Mobil</span></div>
+            </div>
+           
+              
+           
+        </template>
+
+
+
 
 
 
@@ -50,12 +117,109 @@
         let btnArrowDown = document.querySelector(".btnArrowDown");
 
         btnArrowDown.addEventListener("click", e => {
-            let nextSektion = document.querySelector(".flex-ContainerFodbold");
+            let nextSektion = document.querySelector(".flex-ContainerSpillerMenu");
             nextSektion.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
         })
+
+
+        // javascript 1 holdet siden start
+        let apiURL1Holdet = "json/1holdet.json";
+        let forsteHoldet = [];
+
+        get1Team();
+
+        async function get1Team() {
+            if (forsteHoldet.length < 1) {
+                let result = await fetch(apiURL1Holdet, {
+                    method: "get"
+                });
+                forsteHoldet = await result.json();
+                show1Team();
+            }
+
+        }
+
+        function show1Team() {
+            console.log(forsteHoldet)
+
+            let template = document.querySelector(".temp_1holdet");
+            let templateStaben = document.querySelector(".temp_1holdetStaben");
+            let displayMaalmaand = document.querySelector(".MaalmaandContainer");
+            let displayForsvar = document.querySelector(".ForsvarContainer");
+            let displayMidtbane = document.querySelector(".MidtbaneContainer");
+            let displayAngriber = document.querySelector(".AngriberContainer");
+            let displayTraner = document.querySelector(".StabenContainer");
+
+            forsteHoldet.forEach(function(personer) {
+
+                if (personer.type == "maalmand") {
+                    console.log(personer);
+                    let clone = template.content.cloneNode(true);
+
+                    clone.querySelector(".SpillerNavn").textContent = personer.navn;
+                    clone.querySelector(".SpillerImg").src = personer.imgURL;
+                    clone.querySelector(".SpillerImg").alt = personer.navn;
+
+
+                    displayMaalmaand.appendChild(clone);
+                }
+
+                if (personer.type == "forsvar") {
+                    console.log(personer);
+                    let clone = template.content.cloneNode(true);
+
+                    clone.querySelector(".SpillerNavn").textContent = personer.navn;
+                    clone.querySelector(".SpillerImg").src = personer.imgURL;
+                    clone.querySelector(".SpillerImg").alt = personer.navn;
+
+
+                    displayForsvar.appendChild(clone);
+                }
+
+                if (personer.type == "midtbane") {
+                    console.log(personer);
+                    let clone = template.content.cloneNode(true);
+
+                    clone.querySelector(".SpillerNavn").textContent = personer.navn;
+                    clone.querySelector(".SpillerImg").src = personer.imgURL;
+                    clone.querySelector(".SpillerImg").alt = personer.navn;
+
+
+                    displayMidtbane.appendChild(clone);
+                }
+
+                if (personer.type == "angriber") {
+                    console.log(personer);
+                    let clone = template.content.cloneNode(true);
+
+                    clone.querySelector(".SpillerNavn").textContent = personer.navn;
+                    clone.querySelector(".SpillerImg").src = personer.imgURL;
+                    clone.querySelector(".SpillerImg").alt = personer.navn;
+
+
+                    displayAngriber.appendChild(clone);
+                }
+
+
+                if (personer.type == "traener") {
+                    console.log(personer);
+                    let clone = templateStaben.content.cloneNode(true);
+
+                    clone.querySelector(".StabenNavn").textContent = personer.navn;
+                    clone.querySelector(".StabenEmailSpan").textContent = personer.mail;
+                    clone.querySelector(".StabenMobilSpan").textContent = personer.tlf;
+                    clone.querySelector(".StabenImg").src = personer.imgURL;
+                    clone.querySelector(".StabenImg").alt = personer.navn;
+
+
+                    displayTraner.appendChild(clone);
+                }
+
+            });
+        }
 
     </script>
 </body>

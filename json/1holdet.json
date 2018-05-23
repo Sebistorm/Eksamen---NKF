@@ -1,0 +1,129 @@
+[
+    {
+        "navn": "Abdul El-Hajj",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Abdul Sayed",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Alexander Nielsen",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Andreas Lodberg",
+        "type": "angriber",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Andreas Mortensen",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Andreas Møller",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Brian Bjellum",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Carl Urioste",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Casper Nielsen",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Christian Mohr",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Christian Møller",
+        "type": "angriber",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Christioffer Svantemann",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Daniel Nielsen",
+        "type": "maalmand",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Erik Kiersgaard",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Frederik Wagner",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Jacob Fosvald",
+        "type": "angriber",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Jacob Hoedemann",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Mikkel Nielsen",
+        "type": "midtbane",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Simon Grimstrup",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Valdemar Sørensen",
+        "type": "angriber",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Thomas Webbe",
+        "type": "forsvar",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Tobias Lindhart",
+        "type": "maalmand",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+    {
+        "navn": "Daniel Nielsen",
+        "type": "traener",
+        "mail": "DN@nkf.dk",
+        "tlf": "22433480",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	},
+
+    {
+        "navn": "Simon Grimstrup",
+        "type": "traener",
+        "mail": "sm@nkf.dk",
+        "tlf": "40449062",
+        "imgURL": "img/fodbold/noProfilePic.png"
+	}
+
+
+]
