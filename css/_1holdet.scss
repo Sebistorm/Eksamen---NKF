@@ -83,8 +83,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
-
 
     .Container1Holdet,
     .Container1HoldetStaben {
@@ -93,6 +91,7 @@
         align-items: flex-start;
         max-width: 1024px;
         width: 80vw;
+        margin-bottom: 100px;
 
         .Maalmaand,
         .Forsvar,
@@ -164,6 +163,9 @@
                 }
             }
         }
+    }
+    .Container1HoldetStaben {
+        display: none;
     }
 }
 
@@ -289,15 +291,15 @@
 
 // Stilling
 .flex-ContainerStilling {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     .ContainerStilling {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         max-width: 1024px;
         width: 80vw;
 
@@ -451,10 +453,10 @@
 
 
 .flex-ContainerKommendeKampe {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     .KommendeKampeContainer {
         display: flex;

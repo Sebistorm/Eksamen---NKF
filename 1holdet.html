@@ -37,19 +37,13 @@
 
     <section class="flex-ContainerSpillerMenu">
         <div class="SpillerMenuContainer">
-            <div class="SpillerneBtn SpillerMenuFokus">Spillerne</div>
-            <div class="StabenBtn">Staben</div>
-            <div class="StillingBtn">Stilling</div>
-            <div class="KommendeKampe">Kommende Kampe</div>
+            <div class="SpillerneBtn SpillerMenubtn SpillerMenuFokus">Spillerne</div>
+            <div class="StabenBtn SpillerMenubtn">Staben</div>
+            <div class="StillingBtn SpillerMenubtn">Stilling</div>
+            <div class="KommendeKampe SpillerMenubtn">Kommende Kampe</div>
         </div>
     </section>
 
-    <!--    <template class="temp_1holdet"> 
-			<div class="Spiller">
-				<img src="" alt="" class="SpillerImg">
-				<p class="SpillerNavn">DATA_NAVN</p>
-			</div>
-	</template>-->
 
     <section id="forsteHoldet" class="flex-Container1Holdet">
         <div class="Container1Holdet">
@@ -327,7 +321,7 @@
             forsteHoldet.forEach(function(personer) {
 
                 if (personer.type == "maalmand") {
-                    console.log(personer);
+                    //  console.log(personer);
                     let clone = template.content.cloneNode(true);
 
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
@@ -339,7 +333,7 @@
                 }
 
                 if (personer.type == "forsvar") {
-                    console.log(personer);
+                    // console.log(personer);
                     let clone = template.content.cloneNode(true);
 
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
@@ -351,7 +345,7 @@
                 }
 
                 if (personer.type == "midtbane") {
-                    console.log(personer);
+                    // console.log(personer);
                     let clone = template.content.cloneNode(true);
 
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
@@ -363,7 +357,7 @@
                 }
 
                 if (personer.type == "angriber") {
-                    console.log(personer);
+                    //  console.log(personer);
                     let clone = template.content.cloneNode(true);
 
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
@@ -376,7 +370,7 @@
 
 
                 if (personer.type == "traener") {
-                    console.log(personer);
+                    // console.log(personer);
                     let clone = templateStaben.content.cloneNode(true);
 
                     clone.querySelector(".StabenNavn").textContent = personer.navn;
@@ -392,6 +386,100 @@
             });
         }
 
+        // Spillerne btn
+        let spillerneBtn = document.querySelector(".SpillerneBtn");
+        spillerneBtn.addEventListener("click", e => {
+            let spillermenuBtns = document.querySelectorAll(".SpillerMenubtn");
+            // skifter fokus
+            if (!spillermenuBtns[0].classList.contains("SpillerMenuFokus")) {
+                for (k = 0; k < spillermenuBtns.length; k++) {
+                    spillermenuBtns[k].classList.remove("SpillerMenuFokus")
+                }
+                spillermenuBtns[0].classList.add("SpillerMenuFokus");
+            }
+
+            // vis den rigtige sektion og fjern de andre
+            let spillerneContainer = document.querySelector(".Container1Holdet");
+            spillerneContainer.style.display = "flex"
+            let stabenContainer = document.querySelector(".Container1HoldetStaben")
+            stabenContainer.style.display = "none"
+            let stillingContainer = document.querySelector(".flex-ContainerStilling");
+            stillingContainer.style.display = "none"
+            let kommendeKampeContainer = document.querySelector(".flex-ContainerKommendeKampe");
+            kommendeKampeContainer.style.display = "none"
+        })
+
+        // staben btn
+        let stabenBtn = document.querySelector(".StabenBtn");
+        stabenBtn.addEventListener("click", e => {
+            // skifter fokus
+            let spillermenuBtns = document.querySelectorAll(".SpillerMenubtn");
+
+            if (!spillermenuBtns[1].classList.contains("SpillerMenuFokus")) {
+                for (k = 0; k < spillermenuBtns.length; k++) {
+                    spillermenuBtns[k].classList.remove("SpillerMenuFokus")
+                }
+                spillermenuBtns[1].classList.add("SpillerMenuFokus");
+            }
+
+            // vis den rigtige sektion og fjern de andre
+            let spillerneContainer = document.querySelector(".Container1Holdet");
+            spillerneContainer.style.display = "none"
+            let stabenContainer = document.querySelector(".Container1HoldetStaben")
+            stabenContainer.style.display = "flex"
+            let stillingContainer = document.querySelector(".flex-ContainerStilling");
+            stillingContainer.style.display = "none"
+            let kommendeKampeContainer = document.querySelector(".flex-ContainerKommendeKampe");
+            kommendeKampeContainer.style.display = "none"
+        })
+
+        // stilling btn
+        let stillingBtn = document.querySelector(".StillingBtn");
+        stillingBtn.addEventListener("click", e => {
+            // skifter fokus
+            let spillermenuBtns = document.querySelectorAll(".SpillerMenubtn");
+
+            if (!spillermenuBtns[2].classList.contains("SpillerMenuFokus")) {
+                for (k = 0; k < spillermenuBtns.length; k++) {
+                    spillermenuBtns[k].classList.remove("SpillerMenuFokus")
+                }
+                spillermenuBtns[2].classList.add("SpillerMenuFokus");
+            }
+
+            // vis den rigtige sektion og fjern de andre
+            let spillerneContainer = document.querySelector(".Container1Holdet");
+            spillerneContainer.style.display = "none"
+            let stabenContainer = document.querySelector(".Container1HoldetStaben")
+            stabenContainer.style.display = "none"
+            let stillingContainer = document.querySelector(".flex-ContainerStilling");
+            stillingContainer.style.display = "flex"
+            let kommendeKampeContainer = document.querySelector(".flex-ContainerKommendeKampe");
+            kommendeKampeContainer.style.display = "none"
+        })
+
+        // kommende kampe btn
+        let kommendeKampeBtn = document.querySelector(".KommendeKampe");
+        kommendeKampeBtn.addEventListener("click", e => {
+            // skifter fokus
+            let spillermenuBtns = document.querySelectorAll(".SpillerMenubtn");
+
+            if (!spillermenuBtns[3].classList.contains("SpillerMenuFokus")) {
+                for (k = 0; k < spillermenuBtns.length; k++) {
+                    spillermenuBtns[k].classList.remove("SpillerMenuFokus")
+                }
+                spillermenuBtns[3].classList.add("SpillerMenuFokus");
+            }
+
+            // vis den rigtige sektion og fjern de andre
+            let spillerneContainer = document.querySelector(".Container1Holdet");
+            spillerneContainer.style.display = "none"
+            let stabenContainer = document.querySelector(".Container1HoldetStaben")
+            stabenContainer.style.display = "none"
+            let stillingContainer = document.querySelector(".flex-ContainerStilling");
+            stillingContainer.style.display = "none"
+            let kommendeKampeContainer = document.querySelector(".flex-ContainerKommendeKampe");
+            kommendeKampeContainer.style.display = "flex"
+        })
     </script>
 </body>
 
