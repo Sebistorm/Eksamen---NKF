@@ -1,0 +1,188 @@
+.flex-containerFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    background: radial-gradient(circle, $primary-blue, $secondaryGradient-blue);
+
+    .Nyhedsbrev {
+        font-size: 14px;
+        margin-left: 18px;
+        color: $primary-white;
+        text-align: center;
+
+        .NyhedsBrevSpan {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .FooterTextContainer {
+        display: flex;
+
+        .FooterText {
+            display: flex;
+            align-items: center;
+
+            .FooterNavn {
+                color: $primary-white;
+                font-size: 14px;
+                font-weight: 800;
+                margin-right: 5px;
+                text-align: center;
+            }
+
+            .FooterAdresse,
+            .FooterBy,
+            .FooterTelefon,
+            .FooterCVR {
+                font-size: 14px;
+                margin-right: 5px;
+                color: $primary-white;
+                text-align: center;
+            }
+        }
+    }
+
+    .FooterSocialeMedier {
+        display: flex;
+        margin-right: 18px;
+
+        a {
+
+            .FooterFacebook {
+                background-image: url(../img/grafik/facebookIcon.png);
+                width: 38px;
+                height: 38px;
+                background-size: cover;
+                margin: 0px 9px
+            }
+
+            .FooterFacebook:hover,
+            .FooterKampKlar:hover {
+                opacity: 0.7;
+            }
+
+            .FooterKampKlar {
+                background-image: url(../img/grafik/KampKlar.png);
+                width: 38px;
+                height: 38px;
+                background-size: cover;
+                margin: 0px 9px
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .flex-containerFooter {
+        padding: 5px 0px;
+
+        .Nyhedsbrev {
+            font-size: 12px;
+            margin-left: 10px;
+
+        }
+
+        .FooterTextContainer {
+            .FooterText {
+
+
+                .FooterNavn {
+                    font-size: 12px;
+                    margin-right: 5px;
+                }
+
+                .FooterAdresse,
+                .FooterBy,
+                .FooterTelefon,
+                .FooterCVR {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .FooterSocialeMedier {
+            margin-right: 10px;
+
+            a {
+
+                .FooterFacebook {
+                    background-image: url(../img/grafik/facebookIcon.png);
+                    width: 38px;
+                    height: 38px;
+                    background-size: cover;
+                    margin: 0px 9px
+                }
+
+                .FooterKampKlar {
+                    background-image: url(../img/grafik/KampKlar.png);
+                    width: 38px;
+                    height: 38px;
+                    background-size: cover;
+                    margin: 0px 9px
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:881px) {
+    .flex-containerFooter {
+        flex-direction: column;
+        padding: 10px 0px;
+
+        .Nyhedsbrev {
+            font-size: 20px;
+            margin: 30px 0px 30px;
+
+        }
+
+        .FooterTextContainer {
+            .FooterText {
+                flex-direction: column;
+
+                .HideOnMobile {
+                    display: none;
+                }
+
+                .FooterNavn {
+                    font-size: 20px;
+                    margin: 0px 0px 15px;
+                }
+
+                .FooterAdresse,
+                .FooterBy,
+                .FooterTelefon,
+                .FooterCVR {
+                    font-size: 20px;
+                    margin: 0px 0px 10px;
+                }
+            }
+        }
+
+        .FooterSocialeMedier {
+            margin: 30px 0px 0px;
+
+            a {
+
+                .FooterFacebook {
+                    background-image: url(../img/grafik/facebookIcon.png);
+                    width: 68px;
+                    height: 68px;
+                    background-size: cover;
+                    margin: 0px 9px
+                }
+
+                .FooterKampKlar {
+                    background-image: url(../img/grafik/KampKlar.png);
+                    width: 68px;
+                    height: 68px;
+                    background-size: cover;
+                    margin: 0px 9px
+                }
+            }
+        }
+    }
+}

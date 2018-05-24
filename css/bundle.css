@@ -506,7 +506,10 @@ body {
     width: 50%; } }
 @media screen and (max-width: 501px) {
   .flex-ContainerFodbold .ContainerFodbold a {
-    width: 100%; } }
+    width: 100%; }
+
+  .flex-ContainerFodboldspillerSPlash .FodboldSplash h1 {
+    font-size: 50px; } }
 .flex-ContainerFodboldspillerSPlash {
   display: flex;
   width: 100%;
@@ -2590,5 +2593,120 @@ body {
 @media screen and (max-width: 501px) {
   .flex-ContainerUddybetIndhold .ContainerUddybetIndhold .ContainerBoksUddybetIndhold {
     width: 90vw; } }
+.flex-containerFooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  background: radial-gradient(circle, #002366, #001E35); }
+  .flex-containerFooter .Nyhedsbrev {
+    font-size: 14px;
+    margin-left: 18px;
+    color: #fbfbfb;
+    text-align: center; }
+    .flex-containerFooter .Nyhedsbrev .NyhedsBrevSpan {
+      text-decoration: underline;
+      cursor: pointer; }
+  .flex-containerFooter .FooterTextContainer {
+    display: flex; }
+    .flex-containerFooter .FooterTextContainer .FooterText {
+      display: flex;
+      align-items: center; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterNavn {
+        color: #fbfbfb;
+        font-size: 14px;
+        font-weight: 800;
+        margin-right: 5px;
+        text-align: center; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterAdresse,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterBy,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterTelefon,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterCVR {
+        font-size: 14px;
+        margin-right: 5px;
+        color: #fbfbfb;
+        text-align: center; }
+  .flex-containerFooter .FooterSocialeMedier {
+    display: flex;
+    margin-right: 18px; }
+    .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
+      background-image: url(../img/grafik/facebookIcon.png);
+      width: 38px;
+      height: 38px;
+      background-size: cover;
+      margin: 0px 9px; }
+    .flex-containerFooter .FooterSocialeMedier a .FooterFacebook:hover,
+    .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar:hover {
+      opacity: 0.7; }
+    .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+      background-image: url(../img/grafik/KampKlar.png);
+      width: 38px;
+      height: 38px;
+      background-size: cover;
+      margin: 0px 9px; }
+
+@media screen and (max-width: 1025px) {
+  .flex-containerFooter {
+    padding: 5px 0px; }
+    .flex-containerFooter .Nyhedsbrev {
+      font-size: 12px;
+      margin-left: 10px; }
+    .flex-containerFooter .FooterTextContainer .FooterText .FooterNavn {
+      font-size: 12px;
+      margin-right: 5px; }
+    .flex-containerFooter .FooterTextContainer .FooterText .FooterAdresse,
+    .flex-containerFooter .FooterTextContainer .FooterText .FooterBy,
+    .flex-containerFooter .FooterTextContainer .FooterText .FooterTelefon,
+    .flex-containerFooter .FooterTextContainer .FooterText .FooterCVR {
+      font-size: 12px; }
+    .flex-containerFooter .FooterSocialeMedier {
+      margin-right: 10px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
+        background-image: url(../img/grafik/facebookIcon.png);
+        width: 38px;
+        height: 38px;
+        background-size: cover;
+        margin: 0px 9px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        background-image: url(../img/grafik/KampKlar.png);
+        width: 38px;
+        height: 38px;
+        background-size: cover;
+        margin: 0px 9px; } }
+@media screen and (max-width: 881px) {
+  .flex-containerFooter {
+    flex-direction: column;
+    padding: 10px 0px; }
+    .flex-containerFooter .Nyhedsbrev {
+      font-size: 20px;
+      margin: 30px 0px 30px; }
+    .flex-containerFooter .FooterTextContainer .FooterText {
+      flex-direction: column; }
+      .flex-containerFooter .FooterTextContainer .FooterText .HideOnMobile {
+        display: none; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterNavn {
+        font-size: 20px;
+        margin: 0px 0px 15px; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterAdresse,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterBy,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterTelefon,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterCVR {
+        font-size: 20px;
+        margin: 0px 0px 10px; }
+    .flex-containerFooter .FooterSocialeMedier {
+      margin: 30px 0px 0px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
+        background-image: url(../img/grafik/facebookIcon.png);
+        width: 68px;
+        height: 68px;
+        background-size: cover;
+        margin: 0px 9px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        background-image: url(../img/grafik/KampKlar.png);
+        width: 68px;
+        height: 68px;
+        background-size: cover;
+        margin: 0px 9px; } }
 
 /*# sourceMappingURL=bundle.css.map */
