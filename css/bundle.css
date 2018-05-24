@@ -1852,5 +1852,45 @@ body {
   .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben .StabenMailContainer,
   .flex-Container1Holdet .Container1HoldetStaben .Staben .StabenContainer .Staben .StabenMobilContainer {
     font-size: 16px; } }
+.flex-ContainerStilling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px; }
+  .flex-ContainerStilling .ContainerStilling {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1024px;
+    width: 80vw; }
+    .flex-ContainerStilling .ContainerStilling h2 {
+      font-size: 48px;
+      margin: 0px 0px 20px 1%; }
+    .flex-ContainerStilling .ContainerStilling table {
+      background: radial-gradient(circle, #002366, #001E35);
+      border: 6px solid grey;
+      border-radius: 3%;
+      padding: 20px 30px 20px;
+      color: white;
+      text-align: left; }
+    .flex-ContainerStilling .ContainerStilling .TabelOverskrifter {
+      font-size: 18px;
+      height: 40px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPos,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthVundne,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthUafgjort,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthTabte,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPoint {
+        width: 50px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthHold {
+        width: 250px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthKampe {
+        width: 90px; }
+    .flex-ContainerStilling .ContainerStilling tr {
+      height: 40px; }
+      .flex-ContainerStilling .ContainerStilling tr td {
+        font-size: 28px; }
+      .flex-ContainerStilling .ContainerStilling tr .pos {
+        font-weight: 800; }
 
 /*# sourceMappingURL=bundle.css.map */
