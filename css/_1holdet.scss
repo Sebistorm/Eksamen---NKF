@@ -517,6 +517,11 @@
             .UdeHjemme {
                 margin: 20px 0px;
             }
+
+            .resultat {
+                margin-top: 20px;
+                font-size: 36px;
+            }
         }
     }
 }
@@ -549,6 +554,11 @@
 
                 p {
                     font-size: 22px;
+                }
+
+                .resultat {
+                    margin-top: 20px;
+                    font-size: 30px;
                 }
 
                 .UdeHjemme {
@@ -588,9 +598,13 @@
                 p {
                     font-size: 12px;
                 }
+                .resultat {
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
 
                 .UdeHjemme {
-                    margin: 20px 0px;
+                    margin: 10px 0px;
                 }
             }
         }
@@ -625,16 +639,20 @@
                 p {
                     font-size: 12px;
                 }
+                .resultat {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
 
                 .UdeHjemme {
-                    margin: 20px 0px;
+                    margin: 10px 0px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 380px) {
     .flex-ContainerKommendeKampe {
 
         .KommendeKampeContainer {
@@ -661,6 +679,10 @@
 
                 p {
                     font-size: 10px;
+                }
+                .resultat {
+                    margin-top: 10px;
+                    font-size: 12px;
                 }
 
                 .UdeHjemme {

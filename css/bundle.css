@@ -2016,6 +2016,9 @@ body {
         text-transform: uppercase; }
       .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
         margin: 20px 0px; }
+      .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .resultat {
+        margin-top: 20px;
+        font-size: 36px; }
 
 @media screen and (max-width: 1025px) {
   .flex-ContainerKommendeKampe .KommendeKampeContainer {
@@ -2029,6 +2032,9 @@ body {
     margin: 0px 0px 20px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
     font-size: 22px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .resultat {
+    margin-top: 20px;
+    font-size: 30px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
     margin: 20px 0px; } }
 @media screen and (max-width: 830px) {
@@ -2043,8 +2049,11 @@ body {
     margin: 0px 0px 20px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
     font-size: 12px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .resultat {
+    margin-top: 10px;
+    font-size: 16px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
-    margin: 20px 0px; } }
+    margin: 10px 0px; } }
 @media screen and (max-width: 501px) {
   .flex-ContainerKommendeKampe .KommendeKampeContainer {
     width: 90vw; }
@@ -2057,9 +2066,12 @@ body {
     margin: 0px 0px 20px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
     font-size: 12px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .resultat {
+    margin-top: 10px;
+    font-size: 14px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
-    margin: 20px 0px; } }
-@media screen and (max-width: 501px) {
+    margin: 10px 0px; } }
+@media screen and (max-width: 380px) {
   .flex-ContainerKommendeKampe .KommendeKampeContainer {
     width: 90vw; }
     .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
@@ -2071,7 +2083,81 @@ body {
     margin: 0px 0px 20px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
     font-size: 10px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .resultat {
+    margin-top: 10px;
+    font-size: 12px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
     margin: 10px 0px; } }
+.flex-ContainerTraeningstider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px; }
+  .flex-ContainerTraeningstider .TraeningstiderContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 80vw;
+    background: radial-gradient(circle, #002366, #001E35);
+    border: 6px solid grey;
+    border-radius: 3%;
+    padding: 20px 30px 20px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders {
+      display: flex;
+      flex-direction: row;
+      color: #fbfbfb; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
+        font-size: 24px;
+        padding: 0% 1%;
+        text-align: center;
+        margin: 10px 0px; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderDag {
+        width: 15%; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderHold {
+        width: 15%; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderAargang {
+        width: 15%; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderTid {
+        width: 40%; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderBane {
+        width: 15%; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo {
+      display: flex;
+      flex-direction: row; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag,
+      .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold,
+      .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang,
+      .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        color: #fbfbfb; }
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag .traeningstiderBorderBottom,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold .traeningstiderBorderBottom,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang .traeningstiderBorderBottom,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr .traeningstiderBorderBottom {
+          border-bottom: 5px solid #fbfbfb;
+          padding-bottom: 10px; }
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag p,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold p,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang p,
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr p {
+          font-size: 28px;
+          padding: 0% 1%;
+          text-align: center;
+          margin: 10px 0px; }
+      .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        color: #fbfbfb; }
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt .traeningstiderBorderBottom {
+          border-bottom: 5px solid #fbfbfb;
+          padding-bottom: 10px; }
+        .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt p {
+          font-size: 28px;
+          padding: 0% 1%;
+          text-align: center;
+          margin: 10px 0px; }
 
 /*# sourceMappingURL=bundle.css.map */

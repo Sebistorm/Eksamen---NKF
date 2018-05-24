@@ -1,0 +1,99 @@
+.flex-ContainerTraeningstider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 200px;
+
+    .TraeningstiderContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+        width: 80vw;
+
+        background: radial-gradient(circle, $primary-blue, $secondaryGradient-blue);
+        border: 6px solid grey;
+        border-radius: 3%;
+        padding: 20px 30px 20px;
+
+
+
+        .TraeningstiderHeaders {
+            display: flex;
+            flex-direction: row;
+            color: $primary-white;
+
+            p {
+                font-size: 24px;
+                padding: 0% 1%;
+                text-align: center;
+                margin: 10px 0px;
+            }
+
+            .TraeningstiderDag {
+                width: 15%;
+            }
+
+            .TraeningstiderHold {
+                width: 15%;
+            }
+
+            .TraeningstiderAargang {
+                width: 15%;
+            }
+
+            .TraeningstiderTid {
+                width: 40%;
+            }
+            .TraeningstiderBane {
+                width: 15%;
+            }
+        }
+
+        .ContainerForInfo {
+            display: flex;
+            flex-direction: row;
+
+            .TraeningstiderUgeDag,
+            .TraeningstiderUHold,
+            .TraeningstiderHoldsAargang,
+            .TraeningstiderBaneNr {
+                display: flex;
+                flex-direction: column;
+                width: 15%;
+                color: $primary-white;
+
+                .traeningstiderBorderBottom {
+                    border-bottom: 5px solid $primary-white;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 28px;
+                    padding: 0% 1%;
+                    text-align: center;
+                    margin: 10px 0px;
+                }
+            }
+
+            .TraeningstiderTidspunkt {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                color: $primary-white;
+
+                .traeningstiderBorderBottom {
+                    border-bottom: 5px solid $primary-white;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 28px;
+                    padding: 0% 1%;
+                    text-align: center;
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
+}
