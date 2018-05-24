@@ -1,3 +1,97 @@
+// splash for galleri
+.flex-ContainerNyhederSPlash {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+
+    position: relative;
+
+    .GalleriSplash {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/fodbold/GalleriSplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 90px;
+            font-weight: 800;
+            color: $primary-white;
+            z-index: 2;
+            margin: 22vh 0px;
+        }
+    }
+
+    .SplashOverlay {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.58)
+    }
+
+    .btnArrowDown {
+        z-index: 2;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
+
+
+// splash for Event
+.flex-ContainerNyhederSPlash {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+
+    position: relative;
+
+    .EventSplash {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/fodbold/EventsSplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 90px;
+            font-weight: 800;
+            color: $primary-white;
+            z-index: 2;
+            margin: 22vh 0px;
+        }
+    }
+
+    .SplashOverlay {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.58)
+    }
+
+    .btnArrowDown {
+        z-index: 2;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
+
+// splash nyheder
 .flex-ContainerNyhederSPlash {
     display: flex;
     width: 100%;
@@ -71,6 +165,7 @@
             flex-direction: column;
             width: 31%;
             margin: 0px 1% 30px;
+            cursor: pointer;
 
             .ImgContainer {
                 width: 100%;
@@ -115,6 +210,16 @@
     .flex-ContainerNyhederSPlash .NyhederSplash h1 {
         font-size: 50px;
     }
+
+    .flex-ContainerNyhederSPlash .EventSplash h1 {
+        font-size: 50px;
+    }
+
+    .flex-ContainerNyhederSPlash .GalleriSplash h1 {
+        font-size: 50px;
+    }
+
+
 
     .flex-ContainerIndhold {
         margin-top: 100px;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <!-- include the polyfill for WebComponents -->
+    <script src="script/vendor/webcomponents-lite.js"></script>
+    <link rel="import" href="templates/navbar.html" id="navbar-tmplFile">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bundle.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+</head>
+
+<body class="Events">
+
+    <navbar-section>
+        this is a navbar Element
+    </navbar-section>
+
+    <section class="flex-ContainerNyhederSPlash">
+        <div class="GalleriSplash">
+            <h1>Galleri</h1>
+            <div class="SplashOverlay"></div>
+            <img src="img/grafik/arrowDown.svg" alt="arrow down" class="btnArrowDown">
+        </div>
+    </section>
+
+    <section class="flex-ContainerIndhold">
+        <h2>Galleri</h2>
+        <div class="ContainerIndhold">
+            <div class="BoksContainer BoksContainer1">
+                <img src="img/fodbold/GalleriHoldbillede.jpg" alt="2016-Holdbilleder" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>2016-Holdbilleder</p>
+                </div>
+            </div>
+            <div class="BoksContainer BoksContainer2">
+                <img src="img/fodbold/GalleriAfslutning.jpg" alt="sæsonafslutning - 2015" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>Sæsonafslutning - 2015</p>
+                </div>
+            </div>
+            <div class="BoksContainer BoksContainer3">
+                <img src="img/fodbold/GalleriStemningKarsen.jpg" alt="Stemning på Karsen" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>Stemning på Karsen</p>
+                </div>
+            </div>
+            <div class="BoksContainer BoksContainer4">
+                <img src="img/fodbold/GalleriHistorie.jpg" alt="Historie" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>Historie</p>
+                </div>
+            </div>
+            <div class="BoksContainer BoksContainer5">
+                <img src="img/fodbold/GalleriJul.jpg" alt="Julefest 2014" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>Julefest 2014</p>
+                </div>
+            </div>
+            <div class="BoksContainer BoksContainer6">
+                <img src="img/fodbold/GalleriFodboldSkole.jpg" alt="DBU Fodboldskole uge 31" class="ImgContainer">
+                <div class="TekstContainer IndholdFokus">
+                    <p>DBU Fodboldskole uge 31</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script/main.js"></script>
+
+    <script>
+        let btnArrowDown = document.querySelector(".btnArrowDown");
+
+        btnArrowDown.addEventListener("click", e => {
+            let nextSektion = document.querySelector(".flex-ContainerIndhold");
+            nextSektion.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
