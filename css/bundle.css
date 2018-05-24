@@ -528,7 +528,7 @@ body {
       font-weight: 800;
       color: #fbfbfb;
       z-index: 2;
-      margin: 230px 0px; }
+      margin: 22vh 0px; }
   .flex-ContainerFodboldspillerSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
@@ -1827,6 +1827,10 @@ body {
   .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
     font-size: 18px; } }
 @media screen and (max-width: 501px) {
+  .flex-ContainerFodboldspillerSPlash .foorsteHoldetSplash h1 {
+    font-size: 50px;
+    margin: 26vh 0px; }
+
   .flex-ContainerSpillerMenu .SpillerMenuContainer {
     flex-direction: column; }
     .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
@@ -1836,6 +1840,18 @@ body {
       width: 100%;
       font-size: 30px;
       max-width: unset; }
+
+  .flex-Container1Holdet .Container1Holdet .Maalmaand h2,
+  .flex-Container1Holdet .Container1Holdet .Forsvar h2,
+  .flex-Container1Holdet .Container1Holdet .Midtbane h2,
+  .flex-Container1Holdet .Container1Holdet .Angriber h2,
+  .flex-Container1Holdet .Container1Holdet .Staben h2,
+  .flex-Container1Holdet .Container1HoldetStaben .Maalmaand h2,
+  .flex-Container1Holdet .Container1HoldetStaben .Forsvar h2,
+  .flex-Container1Holdet .Container1HoldetStaben .Midtbane h2,
+  .flex-Container1Holdet .Container1HoldetStaben .Angriber h2,
+  .flex-Container1Holdet .Container1HoldetStaben .Staben h2 {
+    font-size: 40px; }
 
   .flex-Container1Holdet .Container1Holdet .Maalmaand .MaalmaandContainer .Spiller,
   .flex-Container1Holdet .Container1Holdet .Forsvar .ForsvarContainer .Spiller,
@@ -1892,5 +1908,168 @@ body {
         font-size: 28px; }
       .flex-ContainerStilling .ContainerStilling tr .pos {
         font-weight: 800; }
+
+@media screen and (max-width: 601px) {
+  .flex-ContainerStilling .ContainerStilling {
+    width: 90vw; }
+    .flex-ContainerStilling .ContainerStilling h2 {
+      font-size: 40px;
+      margin: 0px 0px 20px 1%; }
+    .flex-ContainerStilling .ContainerStilling table {
+      border: 6px solid grey;
+      border-radius: 3%;
+      padding: 10px 10px 10px; }
+    .flex-ContainerStilling .ContainerStilling .TabelOverskrifter {
+      font-size: 12px;
+      height: 40px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPos,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthVundne,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthUafgjort,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthTabte,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPoint {
+        width: 50px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthHold {
+        width: 250px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthKampe {
+        width: 90px; }
+    .flex-ContainerStilling .ContainerStilling tr {
+      height: 30px; }
+      .flex-ContainerStilling .ContainerStilling tr td {
+        font-size: 16px; } }
+@media screen and (max-width: 365px) {
+  .flex-ContainerStilling .ContainerStilling {
+    width: 90vw; }
+    .flex-ContainerStilling .ContainerStilling h2 {
+      font-size: 40px;
+      margin: 0px 0px 20px 1%; }
+    .flex-ContainerStilling .ContainerStilling table {
+      border: 6px solid grey;
+      border-radius: 3%;
+      padding: 10px 10px 10px; }
+    .flex-ContainerStilling .ContainerStilling .TabelOverskrifter {
+      font-size: 8px;
+      height: 20px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPos,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthVundne,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthUafgjort,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthTabte,
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthPoint {
+        width: 50px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthHold {
+        width: 250px; }
+      .flex-ContainerStilling .ContainerStilling .TabelOverskrifter .SetWidthKampe {
+        width: 90px; }
+    .flex-ContainerStilling .ContainerStilling tr {
+      height: 20px; }
+      .flex-ContainerStilling .ContainerStilling tr td {
+        font-size: 12px; } }
+.flex-ContainerKommendeKampe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px; }
+  .flex-ContainerKommendeKampe .KommendeKampeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1024px;
+    width: 80vw; }
+    .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
+      font-size: 48px;
+      margin: 0px 0px 50px 1%;
+      text-align: center; }
+  .flex-ContainerKommendeKampe .KommendeKampe {
+    display: flex;
+    width: 100%;
+    background: radial-gradient(circle, #002366, #001E35);
+    border: 6px solid grey;
+    border-radius: 3%;
+    color: white;
+    margin-bottom: 40px; }
+    .flex-ContainerKommendeKampe .KommendeKampe .Hold1,
+    .flex-ContainerKommendeKampe .KommendeKampe .Hold2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%; }
+      .flex-ContainerKommendeKampe .KommendeKampe .Hold1 .HoldLogo,
+      .flex-ContainerKommendeKampe .KommendeKampe .Hold2 .HoldLogo {
+        margin-top: 20px;
+        width: 70%;
+        height: auto;
+        color: white; }
+      .flex-ContainerKommendeKampe .KommendeKampe .Hold1 p,
+      .flex-ContainerKommendeKampe .KommendeKampe .Hold2 p {
+        font-size: 24px;
+        margin: 0px 0px 20px; }
+    .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40%; }
+      .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
+        font-size: 26px;
+        margin: 0px;
+        text-transform: uppercase; }
+      .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
+        margin: 20px 0px; }
+
+@media screen and (max-width: 1025px) {
+  .flex-ContainerKommendeKampe .KommendeKampeContainer {
+    width: 80vw; }
+    .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
+      font-size: 48px;
+      margin: 0px 0px 30px 1%; }
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold1 p,
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold2 p {
+    font-size: 20px;
+    margin: 0px 0px 20px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
+    font-size: 22px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
+    margin: 20px 0px; } }
+@media screen and (max-width: 830px) {
+  .flex-ContainerKommendeKampe .KommendeKampeContainer {
+    width: 80vw; }
+    .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
+      font-size: 48px;
+      margin: 0px 0px 30px 1%; }
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold1 p,
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold2 p {
+    font-size: 12px;
+    margin: 0px 0px 20px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
+    font-size: 12px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
+    margin: 20px 0px; } }
+@media screen and (max-width: 501px) {
+  .flex-ContainerKommendeKampe .KommendeKampeContainer {
+    width: 90vw; }
+    .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
+      font-size: 40px;
+      margin: 0px 0px 30px 1%; }
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold1 p,
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold2 p {
+    font-size: 12px;
+    margin: 0px 0px 20px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
+    font-size: 12px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
+    margin: 20px 0px; } }
+@media screen and (max-width: 501px) {
+  .flex-ContainerKommendeKampe .KommendeKampeContainer {
+    width: 90vw; }
+    .flex-ContainerKommendeKampe .KommendeKampeContainer h2 {
+      font-size: 40px;
+      margin: 0px 0px 20px 1%; }
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold1 p,
+  .flex-ContainerKommendeKampe .KommendeKampe .Hold2 p {
+    font-size: 10px;
+    margin: 0px 0px 20px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo p {
+    font-size: 10px; }
+  .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
+    margin: 10px 0px; } }
 
 /*# sourceMappingURL=bundle.css.map */

@@ -23,7 +23,7 @@
             font-weight: 800;
             color: $primary-white;
             z-index: 2;
-            margin: 230px 0px;
+            margin: 22vh 0px;
         }
     }
 
@@ -232,6 +232,11 @@
 }
 
 @media screen and (max-width:501px) {
+    .flex-ContainerFodboldspillerSPlash .foorsteHoldetSplash h1 {
+        font-size: 50px;
+        margin: 26vh 0px;
+    }
+
     .flex-ContainerSpillerMenu .SpillerMenuContainer {
         flex-direction: column;
 
@@ -244,6 +249,19 @@
             max-width: unset;
         }
 
+    }
+
+    .flex-Container1Holdet .Container1Holdet .Maalmaand h2,
+    .flex-Container1Holdet .Container1Holdet .Forsvar h2,
+    .flex-Container1Holdet .Container1Holdet .Midtbane h2,
+    .flex-Container1Holdet .Container1Holdet .Angriber h2,
+    .flex-Container1Holdet .Container1Holdet .Staben h2,
+    .flex-Container1Holdet .Container1HoldetStaben .Maalmaand h2,
+    .flex-Container1Holdet .Container1HoldetStaben .Forsvar h2,
+    .flex-Container1Holdet .Container1HoldetStaben .Midtbane h2,
+    .flex-Container1Holdet .Container1HoldetStaben .Angriber h2,
+    .flex-Container1Holdet .Container1HoldetStaben .Staben h2 {
+        font-size: 40px;
     }
 
     .flex-Container1Holdet .Container1Holdet .Maalmaand .MaalmaandContainer .Spiller,
@@ -330,4 +348,323 @@
 
     }
 
+}
+
+
+@media screen and (max-width:601px) {
+    .flex-ContainerStilling {
+
+        .ContainerStilling {
+            width: 90vw;
+
+            h2 {
+                font-size: 40px;
+                margin: 0px 0px 20px 1%;
+            }
+
+            table {
+                border: 6px solid grey;
+                border-radius: 3%;
+                padding: 10px 10px 10px;
+            }
+
+            .TabelOverskrifter {
+                font-size: 12px;
+                height: 40px;
+
+                .SetWidthPos,
+                .SetWidthVundne,
+                .SetWidthUafgjort,
+                .SetWidthTabte,
+                .SetWidthPoint {
+                    width: 50px;
+                }
+                .SetWidthHold {
+                    width: 250px;
+                }
+
+                .SetWidthKampe {
+                    width: 90px;
+                }
+            }
+
+            tr {
+                height: 30px;
+                td {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width:365px) {
+    .flex-ContainerStilling {
+
+        .ContainerStilling {
+            width: 90vw;
+
+            h2 {
+                font-size: 40px;
+                margin: 0px 0px 20px 1%;
+            }
+
+            table {
+                border: 6px solid grey;
+                border-radius: 3%;
+                padding: 10px 10px 10px;
+            }
+
+            .TabelOverskrifter {
+                font-size: 8px;
+                height: 20px;
+
+                .SetWidthPos,
+                .SetWidthVundne,
+                .SetWidthUafgjort,
+                .SetWidthTabte,
+                .SetWidthPoint {
+                    width: 50px;
+                }
+                .SetWidthHold {
+                    width: 250px;
+                }
+
+                .SetWidthKampe {
+                    width: 90px;
+                }
+            }
+
+            tr {
+                height: 20px;
+                td {
+                    font-size: 12px;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+.flex-ContainerKommendeKampe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+
+    .KommendeKampeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 1024px;
+        width: 80vw;
+
+        h2 {
+            font-size: 48px;
+            margin: 0px 0px 50px 1%;
+            text-align: center;
+        }
+    }
+
+    .KommendeKampe {
+        display: flex;
+        width: 100%;
+        background: radial-gradient(circle, $primary-blue, $secondaryGradient-blue);
+        border: 6px solid grey;
+        border-radius: 3%;
+        color: white;
+        margin-bottom: 40px;
+
+        .Hold1,
+        .Hold2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+
+            .HoldLogo {
+                margin-top: 20px;
+                width: 70%;
+                height: auto;
+                color: white;
+            }
+
+            p {
+                font-size: 24px;
+                margin: 0px 0px 20px;
+            }
+        }
+
+        .KommendeKampInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+
+            p {
+                font-size: 26px;
+                margin: 0px;
+                text-transform: uppercase;
+            }
+
+            .UdeHjemme {
+                margin: 20px 0px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1025px) {
+    .flex-ContainerKommendeKampe {
+
+        .KommendeKampeContainer {
+            width: 80vw;
+
+            h2 {
+                font-size: 48px;
+                margin: 0px 0px 30px 1%;
+            }
+        }
+
+        .KommendeKampe {
+
+            .Hold1,
+            .Hold2 {
+
+                p {
+                    font-size: 20px;
+                    margin: 0px 0px 20px;
+                }
+            }
+
+            .KommendeKampInfo {
+
+                p {
+                    font-size: 22px;
+                }
+
+                .UdeHjemme {
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .flex-ContainerKommendeKampe {
+
+        .KommendeKampeContainer {
+            width: 80vw;
+
+            h2 {
+                font-size: 48px;
+                margin: 0px 0px 30px 1%;
+            }
+        }
+
+        .KommendeKampe {
+
+            .Hold1,
+            .Hold2 {
+
+                p {
+                    font-size: 12px;
+                    margin: 0px 0px 20px;
+                }
+            }
+
+            .KommendeKampInfo {
+
+                p {
+                    font-size: 12px;
+                }
+
+                .UdeHjemme {
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .flex-ContainerKommendeKampe {
+
+        .KommendeKampeContainer {
+            width: 90vw;
+
+            h2 {
+                font-size: 40px;
+                margin: 0px 0px 30px 1%;
+            }
+        }
+
+        .KommendeKampe {
+
+            .Hold1,
+            .Hold2 {
+
+                p {
+                    font-size: 12px;
+                    margin: 0px 0px 20px;
+                }
+            }
+
+            .KommendeKampInfo {
+
+                p {
+                    font-size: 12px;
+                }
+
+                .UdeHjemme {
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .flex-ContainerKommendeKampe {
+
+        .KommendeKampeContainer {
+            width: 90vw;
+
+            h2 {
+                font-size: 40px;
+                margin: 0px 0px 20px 1%;
+            }
+        }
+
+        .KommendeKampe {
+
+            .Hold1,
+            .Hold2 {
+
+                p {
+                    font-size: 10px;
+                    margin: 0px 0px 20px;
+                }
+            }
+
+            .KommendeKampInfo {
+
+                p {
+                    font-size: 10px;
+                }
+
+                .UdeHjemme {
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
 }
