@@ -2088,11 +2088,69 @@ body {
     font-size: 12px; }
   .flex-ContainerKommendeKampe .KommendeKampe .KommendeKampInfo .UdeHjemme {
     margin: 10px 0px; } }
+.flex-ContainerTraeningstiderSPlash {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 100px;
+  position: relative; }
+  .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grafik/baneoversigt4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash h1 {
+      font-size: 90px;
+      font-weight: 800;
+      color: #fbfbfb;
+      z-index: 2;
+      margin: 24vh 0px 0px; }
+    .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash a {
+      text-decoration: none;
+      z-index: 5;
+      max-width: 300px;
+      width: 60%;
+      margin-top: 8vh; }
+      .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash a button {
+        font-size: 22px;
+        background-color: #fbfbfb;
+        border: none;
+        color: black;
+        padding: 20px 0px;
+        width: 100%;
+        transition: all 1s;
+        cursor: pointer; }
+      .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash a button:hover {
+        background-color: #555555;
+        color: #fbfbfb; }
+  .flex-ContainerTraeningstiderSPlash .SplashOverlay {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.58); }
+  .flex-ContainerTraeningstiderSPlash .btnArrowDown {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-top: 20vh; }
+
 .flex-ContainerTraeningstider {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px; }
+  .flex-ContainerTraeningstider h2 {
+    font-size: 48px;
+    margin: 0px 0px 30px 1%;
+    width: 80vw;
+    max-width: 1024px; }
   .flex-ContainerTraeningstider .TraeningstiderContainer {
     display: flex;
     flex-direction: column;
@@ -2105,7 +2163,8 @@ body {
     .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders {
       display: flex;
       flex-direction: row;
-      color: #fbfbfb; }
+      color: #fbfbfb;
+      border-bottom: 5px solid #fbfbfb; }
       .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
         font-size: 24px;
         padding: 0% 1%;
@@ -2159,5 +2218,143 @@ body {
           padding: 0% 1%;
           text-align: center;
           margin: 10px 0px; }
+
+@media screen and (max-width: 951px) {
+  .flex-ContainerTraeningstider h2 {
+    font-size: 48px;
+    margin: 0px 0px 30px 1%; }
+  .flex-ContainerTraeningstider .TraeningstiderContainer {
+    padding: 20px 10px 20px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
+      font-size: 16px;
+      margin: 10px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr .traeningstiderBorderBottom {
+      border-bottom: 5px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr p {
+      font-size: 20px;
+      padding: 0% 1%;
+      margin: 10px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt .traeningstiderBorderBottom {
+      border-bottom: 5px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt p {
+      font-size: 20px;
+      padding: 0% 1%;
+      margin: 10px 0px; } }
+@media screen and (max-width: 655px) {
+  .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash h1 {
+    font-size: 50px; }
+
+  .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash a {
+    max-width: 200px; }
+
+  .flex-ContainerTraeningstider h2 {
+    font-size: 40px;
+    margin: 0px 0px 30px 1%;
+    width: 90vw; }
+  .flex-ContainerTraeningstider .TraeningstiderContainer {
+    padding: 10px 10px 10px;
+    width: 90vw; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
+      font-size: 14px;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr .traeningstiderBorderBottom {
+      border-bottom: 5px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr p {
+      font-size: 16px;
+      padding: 0% 1%;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt .traeningstiderBorderBottom {
+      border-bottom: 5px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt p {
+      font-size: 16px;
+      padding: 0% 1%;
+      margin: 5px 0px; } }
+@media screen and (max-width: 474px) {
+  .flex-ContainerTraeningstider h2 {
+    font-size: 40px;
+    margin: 0px 0px 30px 1%;
+    width: 95vw; }
+  .flex-ContainerTraeningstider .TraeningstiderContainer {
+    padding: 10px 5px 10px;
+    width: 95vw; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
+      font-size: 12px;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr p {
+      font-size: 14px;
+      padding: 0% 1%;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt p {
+      font-size: 14px;
+      padding: 0% 1%;
+      margin: 5px 0px; } }
+@media screen and (max-width: 390px) {
+  .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash h1 {
+    font-size: 40px; }
+
+  .flex-ContainerTraeningstider h2 {
+    font-size: 40px;
+    margin: 0px 0px 30px 1%;
+    width: 95vw; }
+  .flex-ContainerTraeningstider .TraeningstiderContainer {
+    padding: 10px 5px 10px;
+    width: 95vw; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders p {
+      font-size: 10px;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang .traeningstiderBorderBottom,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUgeDag p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderUHold p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderHoldsAargang p,
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr p {
+      font-size: 12px;
+      padding: 0% 1%;
+      margin: 5px 0px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt .traeningstiderBorderBottom {
+      border-bottom: 2px solid #fbfbfb;
+      padding-bottom: 10px; }
+    .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt p {
+      font-size: 12px;
+      padding: 0% 1%;
+      margin: 5px 0px; } }
 
 /*# sourceMappingURL=bundle.css.map */
