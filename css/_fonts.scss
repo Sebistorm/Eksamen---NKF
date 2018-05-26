@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Broodtekst;
+    src: url(../fonts/MuseoSans_500-webfont.woff);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Overskritt;
+    src: url(../fonts/BloggerSans.woff);
+    font-weight: 400
+}
+
+$primary-BroodtekstFont: Broodtekst;
+$primary-OverskriftFont: Overskrift;
+
+p,
+a,
+span {
+    font-family: $primary-BroodtekstFont, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+    font-family: $primary-OverskriftFont, sans-serif !important;
+}
