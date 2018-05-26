@@ -10,7 +10,7 @@ if (document.body.className == "Index") {
         fodboldspillerPunktliste.style.display = "block"
 
         let fodboldspillerOverlay = document.querySelector(".FodboldOverlay")
-        fodboldspillerOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.8)"
+        fodboldspillerOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.8)"
     });
 
     fodboldspillerSektion.addEventListener("mouseout", e => {
@@ -21,7 +21,7 @@ if (document.body.className == "Index") {
         fodboldspillerPunktliste.style.display = "none"
 
         let fodboldspillerOverlay = document.querySelector(".FodboldOverlay")
-        fodboldspillerOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.4)"
+        fodboldspillerOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.4)"
     });
 
     // træner sektion
@@ -35,7 +35,7 @@ if (document.body.className == "Index") {
         traenerPunktliste.style.display = "block"
 
         let traenerOverlay = document.querySelector(".TraenerOverlay")
-        traenerOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.8)"
+        traenerOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.8)"
     });
 
     traenerSektion.addEventListener("mouseout", e => {
@@ -46,7 +46,7 @@ if (document.body.className == "Index") {
         traenerPunktliste.style.display = "none"
 
         let traenerOverlay = document.querySelector(".TraenerOverlay")
-        traenerOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.4)"
+        traenerOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.4)"
     });
 
     // klubben sektion
@@ -60,7 +60,7 @@ if (document.body.className == "Index") {
         klubbenPunktliste.style.display = "block"
 
         let klubbenOverlay = document.querySelector(".KlubbenOverlay")
-        klubbenOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.8)"
+        klubbenOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.8)"
     });
 
     klubbenSektion.addEventListener("mouseout", e => {
@@ -71,7 +71,7 @@ if (document.body.className == "Index") {
         klubbenPunktliste.style.display = "none"
 
         let klubbenOverlay = document.querySelector(".KlubbenOverlay")
-        klubbenOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.4)"
+        klubbenOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.4)"
     });
 
     // Praktisk info sektion
@@ -85,7 +85,7 @@ if (document.body.className == "Index") {
         prakInfoPunktliste.style.display = "block"
 
         let prakInfoOverlay = document.querySelector(".PraktiskInfoOverlay")
-        prakInfoOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.8)"
+        prakInfoOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.8)"
     });
 
     PrakInfoSektion.addEventListener("mouseout", e => {
@@ -96,6 +96,6 @@ if (document.body.className == "Index") {
         prakInfoPunktliste.style.display = "none"
 
         let prakInfoOverlay = document.querySelector(".PraktiskInfoOverlay")
-        prakInfoOverlay.style.backgroundColor = "rgba(0, 35, 102, 0.4)"
+        prakInfoOverlay.style.backgroundColor = "rgba(0, 30, 53, 0.4)"
     });
 }

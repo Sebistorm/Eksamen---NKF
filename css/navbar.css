@@ -1,3 +1,41 @@
+@font-face {
+  font-family: Broodtekst;
+  src: url(../fonts/MuseoSans_500-webfont.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Overskritt;
+  src: url(../fonts/BloggerSans.woff);
+  font-weight: 400; }
+p,
+a,
+span {
+  font-family: Broodtekst, sans-serif !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-family: Overskrift, sans-serif !important; }
+
+p,
+a,
+span {
+  font-family: Broodtekst, sans-serif !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-family: Overskrift, sans-serif !important; }
+
 .wrapper {
   display: none; }
 
@@ -41,7 +79,8 @@
       padding: 13px 8px;
       margin: 0px 8px;
       text-decoration: none;
-      font-size: 20px; }
+      font-size: 20px;
+      transition: all 1s; }
     .topnav .MenuPunkterParent a:hover {
       background-color: #fbfbfb;
       color: black; }
@@ -57,7 +96,7 @@
       margin: 6px 0; }
 
 .active {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #fbfbfb;
   color: white; }
 
 @media screen and (max-width: 1457px) {
@@ -66,9 +105,6 @@
 
   .topnav .BetterHomeLogo .BetterHomeLogoImg {
     margin-left: 20px; } }
-@media screen and (max-width: 1401px) {
-  .topnav .MenuPunkterParent a {
-    font-size: 15px; } }
 @media screen and (max-width: 1025px) {
   .topnav {
     height: 93px; }

@@ -9,6 +9,7 @@
     <!-- include the polyfill for WebComponents -->
     <script src="script/vendor/webcomponents-lite.js"></script>
     <link rel="import" href="templates/navbar.html" id="navbar-tmplFile">
+    <link rel="import" href="templates/footer.html" id="footer-tmplFile">
 
 
 
@@ -40,18 +41,22 @@
             </div>
             <div class="NyhederSektion">
                 <img src="img/grafik/news.svg" alt="nyheder" class="NyhederSvg">
-                <a href=""><button>Nyheder</button></a>
+                <a href="nyheder.html"><button>Nyheder</button></a>
             </div>
             <div class="EventSektion">
                 <img src="img/grafik/event.svg" alt="Event" class="EventSvg">
-                <a href=""><button>Events</button></a>
+                <a href="events.html"><button>Events</button></a>
             </div>
             <div class="GalleriSektion">
                 <img src="img/grafik/galleri.svg" alt="Galleri" class="GalleriSvg">
-                <a href=""><button>Galleri</button></a>
+                <a href="galleri.html"><button>Galleri</button></a>
             </div>
         </div>
     </section>
+
+    <footer-section>
+        this is custom element
+    </footer-section>
 
 
 
@@ -67,6 +72,7 @@
                 block: 'start'
             });
         })
+
     </script>
 </body>
 

@@ -1,5 +1,24 @@
 $primary-grey: #575756;
 @import "_variabler";
+@import "_fonts";
+
+
+p,
+a,
+span {
+    font-family: $primary-BroodtekstFont, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+    font-family: $primary-OverskriftFont, sans-serif !important;
+}
 
 .wrapper {
     display: none;
@@ -55,6 +74,7 @@ $primary-grey: #575756;
             margin: 0px 8px;
             text-decoration: none;
             font-size: 20px;
+            transition: all 1s;
         }
 
         a:hover {
@@ -85,7 +105,7 @@ $primary-grey: #575756;
 }
 
 .active {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid $primary-white;
     color: white;
 }
 
@@ -97,13 +117,6 @@ $primary-grey: #575756;
 
     .topnav .BetterHomeLogo .BetterHomeLogoImg {
         margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 1401px) {
-
-    .topnav .MenuPunkterParent a {
-        font-size: 15px;
     }
 }
 
