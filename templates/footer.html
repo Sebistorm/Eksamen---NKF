@@ -1,3 +1,5 @@
+<template id="footer-section-tmpl">
+<style>
 .flex-containerFooter {
   display: flex;
   width: 100%;
@@ -113,5 +115,87 @@
         height: 68px;
         background-size: cover;
         margin: 0px 9px; } }
+     
+</style>
+ 
+  <footer>
+        <div class="flex-containerFooter">
+            <p class="Nyhedsbrev">Tilmeld dig vores <span class="NyhedsBrevSpan">nyhedbrev</span></p>
+            <div class="FooterTextContainer">
+                <div class="FooterText">
+                    <p class="FooterNavn">Nivå-Kokkedal FK</p>
+                    <p class="FooterAdresse">Karsemosegård Idrætsanlæg Møllevej 4 <span class="HideOnMobile">·</span></p>
+                    <p class="FooterBy">DK 2990 Nivå <span class="HideOnMobile">·</span></p>
+                    <p class="FooterTelefon">Tlf: 30 11 91 00 <span class="HideOnMobile">·</span></p>
+                    <p class="FooterCVR">CVR: 19525236</p>
+                </div>
+            </div>
+            <div class="FooterSocialeMedier">
+                <a href="#" target="_blank">
+                    <div class="FooterFacebook"></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="FooterKampKlar"></div>
+                </a>
+            </div>
+        </div> 
+    </footer>
+</template>
 
-/*# sourceMappingURL=footer.css.map */
+<script>
+    (function() {
+        let thisImportDoc = document.currentScript.ownerDocument;
+
+        class FooterSection extends HTMLElement {
+            constructor() {
+                super();
+            }
+
+            static get template() {
+                if (!this._template) {
+                    this._template = thisImportDoc.querySelector("#footer-section-tmpl");
+                }
+                return this._template;
+            }
+
+            connectedCallback() {
+                //				console.log("Navbar på siden");
+
+                let shadowRoot = this.attachShadow({
+                    mode: "open"
+                });
+
+                let tmpl = FooterSection.template;
+                shadowRoot.appendChild(document.importNode(tmpl.content, true));
+
+                // custom javascript start
+
+
+                // custom javascript slut
+
+                const supportsNativeShadowDom = !!HTMLElement.prototype.attachShadow;
+                if (!supportsNativeShadowDom) {
+                    ShadyCSS.applyStyle(this);
+                }
+            }
+
+            disconnectedCallback() {
+                console.log("Navbar ikke på siden");
+            }
+
+            adoptedCallback() {
+                console.log("Navbar adopted in page");
+            }
+
+            attributeChangedCallback(name, oldValue, newValue) {
+                console.log("footer attr: " + name + " changed from '" +
+                    oldValue + "' to '" + newValue + "'");
+            }
+        }
+
+        ShadyCSS.prepareTemplate(FooterSection.template, "footer-section");
+        customElements.define("footer-section", FooterSection);
+
+    })();
+
+</script>
