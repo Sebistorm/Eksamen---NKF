@@ -67,7 +67,8 @@ body {
       .flex-containerMenuer .ContainerMenu .GalleriSektion .NyhederSvg {
         width: 20%;
         height: 20%;
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        object-fit: contain; }
       .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
       .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
       .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
