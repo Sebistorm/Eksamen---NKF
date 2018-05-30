@@ -15,7 +15,10 @@ $primary-OverskriftFont: Overskrift;
 
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
     font-family: $primary-BroodtekstFont, sans-serif !important;
 }
 

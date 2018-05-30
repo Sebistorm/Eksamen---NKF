@@ -8,7 +8,10 @@
   font-weight: 400; }
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
   font-family: Broodtekst, sans-serif !important; }
 
 h1,
@@ -140,16 +143,38 @@ h8 {
     .flex-containerFooter .FooterSocialeMedier {
       margin: 30px 0px 0px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
-        background-image: url(../img/grafik/facebookIcon.png);
         width: 68px;
-        height: 68px;
-        background-size: cover;
-        margin: 0px 9px; }
+        height: 68px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
-        background-image: url(../img/grafik/KampKlar.png);
         width: 68px;
-        height: 68px;
-        background-size: cover;
-        margin: 0px 9px; } }
+        height: 68px; } }
+@media screen and (max-width: 401px) {
+  .flex-containerFooter {
+    flex-direction: column;
+    padding: 10px 0px; }
+    .flex-containerFooter .Nyhedsbrev {
+      font-size: 16px;
+      margin: 30px 0px 30px; }
+    .flex-containerFooter .FooterTextContainer .FooterText {
+      flex-direction: column; }
+      .flex-containerFooter .FooterTextContainer .FooterText .HideOnMobile {
+        display: none; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterNavn {
+        font-size: 16px;
+        margin: 0px 0px 15px; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterAdresse,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterBy,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterTelefon,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterCVR {
+        font-size: 16px;
+        margin: 0px 0px 10px; }
+    .flex-containerFooter .FooterSocialeMedier {
+      margin: 30px 0px 0px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
+        width: 68px;
+        height: 68px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        width: 68px;
+        height: 68px; } }
 
 /*# sourceMappingURL=footer.css.map */

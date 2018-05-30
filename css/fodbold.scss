@@ -23,7 +23,8 @@
             font-weight: 800;
             color: $primary-white;
             z-index: 2;
-            margin: 230px 0px;
+            margin: 22vh 0px;
+            text-shadow: 4px 4px 8px #000000;
         }
     }
 
@@ -40,6 +41,11 @@
         width: 48px;
         height: 48px;
         cursor: pointer;
+    }
+
+    .btnArrowDown:hover {
+        width: 58px;
+        height: 58px;
     }
 }
 
@@ -78,6 +84,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -126,6 +133,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -160,6 +168,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -194,6 +203,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -228,6 +238,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -262,6 +273,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -298,6 +310,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -334,6 +347,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {
@@ -370,6 +384,7 @@
                 font-size: 30px;
                 color: $primary-white;
                 z-index: 2;
+                text-shadow: 4px 4px 8px #000000;
             }
 
             .FodboldOverlay {

@@ -28,7 +28,8 @@ body {
             font-weight: 800;
             color: white;
             z-index: 2;
-            margin: 230px 0px;
+            margin: 22vh 0px;
+            text-shadow: 4px 4px 8px #000000;
         }
     }
 
@@ -45,6 +46,11 @@ body {
         width: 48px;
         height: 48px;
         cursor: pointer;
+    }
+
+    .btnArrowDown:hover {
+        width: 58px;
+        height: 58px;
     }
 }
 
@@ -115,6 +121,80 @@ body {
 
         }
     }
+}
 
+@media screen and (max-width:781px) {
+    .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash h1 {
+        font-size: 50px;
+    }
 
+    .flex-containerMenuer .ContainerMenu .FodboldSektion a,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion a,
+    .flex-containerMenuer .ContainerMenu .EventSektion a,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion a {
+        width: 60%;
+    }
+
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .EventSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .EventSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion .GalleriSvg {
+        height: 45%;
+        width: 35%;
+    }
+
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .FodboldSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .NyhederSvg {
+        width: 30%;
+        height: 28%;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .flex-containerMenuer .ContainerMenu .FodboldSektion a,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion a,
+    .flex-containerMenuer .ContainerMenu .EventSektion a,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion a {
+        width: 80%;
+    }
+
+    .flex-containerMenuer .ContainerMenu {
+        height: 600px;
+    }
+
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .FodboldSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .NyhederSvg {
+        width: 40%;
+        height: 32%;
+        margin-bottom: 20px;
+    }
+
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .EventSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .EventSektion .GalleriSvg,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion .EventSvg,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion .GalleriSvg {
+        height: 50%;
+        width: 64%;
+    }
+
+    .flex-containerMenuer .ContainerMenu .FodboldSektion a button,
+    .flex-containerMenuer .ContainerMenu .NyhederSektion a button,
+    .flex-containerMenuer .ContainerMenu .EventSektion a button,
+    .flex-containerMenuer .ContainerMenu .GalleriSektion a button {
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash h1 {
+        font-size: 35px;
+    }
 }

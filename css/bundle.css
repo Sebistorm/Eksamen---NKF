@@ -8,7 +8,10 @@
   font-weight: 400; }
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
   font-family: Broodtekst, sans-serif !important; }
 
 h1,
@@ -59,7 +62,8 @@ h8 {
       color: white;
       z-index: 2;
       font-size: 5vw;
-      font-weight: 800; }
+      font-weight: 800;
+      text-shadow: 4px 4px 8px #000000; }
     .LandingpageContent .LandingpageFodboldspiller .FodboldspillerPunktListe {
       display: none;
       color: white;
@@ -91,7 +95,8 @@ h8 {
       color: white;
       z-index: 2;
       font-size: 5vw;
-      font-weight: 800; }
+      font-weight: 800;
+      text-shadow: 4px 4px 8px #000000; }
     .LandingpageContent .LandingpageTraener .TraenerPunktListe {
       display: none;
       color: white;
@@ -123,7 +128,8 @@ h8 {
       color: white;
       z-index: 2;
       font-size: 5vw;
-      font-weight: 800; }
+      font-weight: 800;
+      text-shadow: 4px 4px 8px #000000; }
     .LandingpageContent .LandingpageKlubben .KlubbenPunktListe {
       display: none;
       color: white;
@@ -155,7 +161,8 @@ h8 {
       color: white;
       z-index: 2;
       font-size: 5vw;
-      font-weight: 800; }
+      font-weight: 800;
+      text-shadow: 4px 4px 8px #000000; }
     .LandingpageContent .LandingpagePraktiskInfo .PraktiskInfoPunktListe {
       display: none;
       color: white;
@@ -195,7 +202,8 @@ body {
       font-weight: 800;
       color: white;
       z-index: 2;
-      margin: 230px 0px; }
+      margin: 22vh 0px;
+      text-shadow: 4px 4px 8px #000000; }
   .flex-ContainerFodboldspillerSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
@@ -207,6 +215,9 @@ body {
     width: 48px;
     height: 48px;
     cursor: pointer; }
+  .flex-ContainerFodboldspillerSPlash .btnArrowDown:hover {
+    width: 58px;
+    height: 58px; }
 
 .flex-containerMenuer {
   display: flex;
@@ -276,6 +287,66 @@ body {
           background-color: white;
           color: black; }
 
+@media screen and (max-width: 781px) {
+  .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash h1 {
+    font-size: 50px; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion a,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion a,
+  .flex-containerMenuer .ContainerMenu .EventSektion a,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion a {
+    width: 60%; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .EventSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .EventSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion .GalleriSvg {
+    height: 45%;
+    width: 35%; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .FodboldSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .NyhederSvg {
+    width: 30%;
+    height: 28%; } }
+@media screen and (max-width: 501px) {
+  .flex-containerMenuer .ContainerMenu .FodboldSektion a,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion a,
+  .flex-containerMenuer .ContainerMenu .EventSektion a,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion a {
+    width: 80%; }
+
+  .flex-containerMenuer .ContainerMenu {
+    height: 600px; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .FodboldSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .NyhederSvg {
+    width: 40%;
+    height: 32%;
+    margin-bottom: 20px; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .FodboldSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .EventSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .EventSektion .GalleriSvg,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion .EventSvg,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion .GalleriSvg {
+    height: 50%;
+    width: 64%; }
+
+  .flex-containerMenuer .ContainerMenu .FodboldSektion a button,
+  .flex-containerMenuer .ContainerMenu .NyhederSektion a button,
+  .flex-containerMenuer .ContainerMenu .EventSektion a button,
+  .flex-containerMenuer .ContainerMenu .GalleriSektion a button {
+    padding: 10px 0px; } }
+@media screen and (max-width: 415px) {
+  .flex-ContainerFodboldspillerSPlash .FodboldspillerSplash h1 {
+    font-size: 35px; } }
 .flex-ContainerFodboldspillerSPlash {
   display: flex;
   width: 100%;
@@ -297,7 +368,8 @@ body {
       font-weight: 800;
       color: #fbfbfb;
       z-index: 2;
-      margin: 230px 0px; }
+      margin: 22vh 0px;
+      text-shadow: 4px 4px 8px #000000; }
   .flex-ContainerFodboldspillerSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
@@ -309,6 +381,9 @@ body {
     width: 48px;
     height: 48px;
     cursor: pointer; }
+  .flex-ContainerFodboldspillerSPlash .btnArrowDown:hover {
+    width: 58px;
+    height: 58px; }
 
 .flex-ContainerFodbold {
   display: flex;
@@ -335,7 +410,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .Fodbold1Holdet h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .Fodbold1Holdet .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -370,7 +446,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldDrenge h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldDrenge .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -393,7 +470,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldPiger h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldPiger .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -416,7 +494,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldSenior h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldSenior .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -439,7 +518,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldKvindeSenior h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldKvindeSenior .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -462,7 +542,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldVeteraner h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldVeteraner .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -486,7 +567,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldMixTeam h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldMixTeam .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -510,7 +592,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldTraeningTidspunkter h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldTraeningTidspunkter .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -534,7 +617,8 @@ body {
       .flex-ContainerFodbold .ContainerFodbold .FodboldKampeResultater h2 {
         font-size: 30px;
         color: #fbfbfb;
-        z-index: 2; }
+        z-index: 2;
+        text-shadow: 4px 4px 8px #000000; }
       .flex-ContainerFodbold .ContainerFodbold .FodboldKampeResultater .FodboldOverlay {
         height: 100%;
         width: 100%;
@@ -574,7 +658,8 @@ body {
       font-weight: 800;
       color: #fbfbfb;
       z-index: 2;
-      margin: 22vh 0px; }
+      margin: 22vh 0px;
+      text-shadow: 4px 4px 8px #000000; }
   .flex-ContainerFodboldspillerSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
@@ -586,6 +671,9 @@ body {
     width: 48px;
     height: 48px;
     cursor: pointer; }
+  .flex-ContainerFodboldspillerSPlash .btnArrowDown:hover {
+    width: 58px;
+    height: 58px; }
 
 .flex-ContainerSpillerMenu {
   display: flex;
@@ -2186,6 +2274,9 @@ body {
     height: 48px;
     cursor: pointer;
     margin-top: 20vh; }
+  .flex-ContainerTraeningstiderSPlash .btnArrowDown:hover {
+    width: 58px;
+    height: 58px; }
 
 .flex-ContainerTraeningstider {
   display: flex;
@@ -2423,7 +2514,8 @@ body {
       font-weight: 800;
       color: #fbfbfb;
       z-index: 2;
-      margin: 22vh 0px; }
+      margin: 22vh 0px;
+      text-shadow: 4px 4px 8px #000000; }
   .flex-ContainerNyhederSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
@@ -2435,6 +2527,9 @@ body {
     width: 48px;
     height: 48px;
     cursor: pointer; }
+  .flex-ContainerNyhederSPlash .btnArrowDown:hover {
+    width: 58px;
+    height: 58px; }
 
 .flex-ContainerNyhederSPlash {
   display: flex;
@@ -2649,7 +2744,10 @@ body {
   font-weight: 400; }
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
   font-family: Broodtekst, sans-serif !important; }
 
 h1,
@@ -2781,17 +2879,39 @@ h8 {
     .flex-containerFooter .FooterSocialeMedier {
       margin: 30px 0px 0px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
-        background-image: url(../img/grafik/facebookIcon.png);
         width: 68px;
-        height: 68px;
-        background-size: cover;
-        margin: 0px 9px; }
+        height: 68px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
-        background-image: url(../img/grafik/KampKlar.png);
         width: 68px;
-        height: 68px;
-        background-size: cover;
-        margin: 0px 9px; } }
+        height: 68px; } }
+@media screen and (max-width: 401px) {
+  .flex-containerFooter {
+    flex-direction: column;
+    padding: 10px 0px; }
+    .flex-containerFooter .Nyhedsbrev {
+      font-size: 16px;
+      margin: 30px 0px 30px; }
+    .flex-containerFooter .FooterTextContainer .FooterText {
+      flex-direction: column; }
+      .flex-containerFooter .FooterTextContainer .FooterText .HideOnMobile {
+        display: none; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterNavn {
+        font-size: 16px;
+        margin: 0px 0px 15px; }
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterAdresse,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterBy,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterTelefon,
+      .flex-containerFooter .FooterTextContainer .FooterText .FooterCVR {
+        font-size: 16px;
+        margin: 0px 0px 10px; }
+    .flex-containerFooter .FooterSocialeMedier {
+      margin: 30px 0px 0px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
+        width: 68px;
+        height: 68px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        width: 68px;
+        height: 68px; } }
 @font-face {
   font-family: Broodtekst;
   src: url(../fonts/MuseoSans_500-webfont.woff);
@@ -2802,7 +2922,10 @@ h8 {
   font-weight: 400; }
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
   font-family: Broodtekst, sans-serif !important; }
 
 h1,
