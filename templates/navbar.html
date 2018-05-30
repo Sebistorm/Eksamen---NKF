@@ -372,7 +372,6 @@ h8 {
 <script>
     (function() {
         let thisImportDoc = document.currentScript.ownerDocument;
-
         class NavbarSection extends HTMLElement {
             constructor() {
                 super();
@@ -386,17 +385,13 @@ h8 {
             }
 
             connectedCallback() {
-                //				console.log("Navbar på siden");
-
+                //console.log("Navbar på siden");
                 let shadowRoot = this.attachShadow({
                     mode: "open"
                 });
-
                 let tmpl = NavbarSection.template;
                 shadowRoot.appendChild(document.importNode(tmpl.content, true));
-
                 // custom javascript start
-
                 let btnBurger = shadowRoot.getElementById("container-burger");
                 btnBurger.addEventListener("click", function() {
                     // do something
@@ -404,7 +399,6 @@ h8 {
 
                     btnBurgerWrapper.classList.toggle("responsive");
                 });
-
                 (function setActive() {
                     let aObj = shadowRoot.getElementById('container-menuPunkter').getElementsByTagName('a');
                     //console.log(aObj)
@@ -414,7 +408,6 @@ h8 {
                         }
                     }
                 })();
-
                 // custom javascript slut
 
                 const supportsNativeShadowDom = !!HTMLElement.prototype.attachShadow;

@@ -1,3 +1,20 @@
+// farver
 $primary-white: #fbfbfb;
 $primary-blue: #002366;
 $secondaryGradient-blue: #001E35;
+
+@font-face {
+    font-family: Broodtekst;
+    src: url(../fonts/MuseoSans_500-webfont.woff);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Overskritt;
+    src: url(../fonts/BloggerSans.woff);
+    font-weight: 400
+}
+
+// fonts
+$primary-BroodtekstFont: Broodtekst;
+$primary-OverskriftFont: Overskrift;

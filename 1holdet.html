@@ -80,16 +80,12 @@
     </section>
 
 
-
-
-
-
     <template class="temp_1holdet">
             <div class="Spiller">
                 <img src="img/fodbold/noProfilePic.png" alt="" class="SpillerImg">
                 <p class="SpillerNavn">Sebastian Storm</p>
             </div>
-        </template>
+    </template>
 
     <template class="temp_1holdetStaben">
         
@@ -324,52 +320,39 @@
             let displayTraner = document.querySelector(".StabenContainer");
 
             forsteHoldet.forEach(function(personer) {
-
                 if (personer.type == "maalmand") {
                     //  console.log(personer);
                     let clone = template.content.cloneNode(true);
-
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
                     clone.querySelector(".SpillerImg").src = personer.imgURL;
                     clone.querySelector(".SpillerImg").alt = personer.navn;
-
-
                     displayMaalmaand.appendChild(clone);
                 }
 
                 if (personer.type == "forsvar") {
                     // console.log(personer);
                     let clone = template.content.cloneNode(true);
-
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
                     clone.querySelector(".SpillerImg").src = personer.imgURL;
                     clone.querySelector(".SpillerImg").alt = personer.navn;
-
-
                     displayForsvar.appendChild(clone);
                 }
 
                 if (personer.type == "midtbane") {
                     // console.log(personer);
                     let clone = template.content.cloneNode(true);
-
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
                     clone.querySelector(".SpillerImg").src = personer.imgURL;
                     clone.querySelector(".SpillerImg").alt = personer.navn;
-
-
                     displayMidtbane.appendChild(clone);
                 }
 
                 if (personer.type == "angriber") {
                     //  console.log(personer);
                     let clone = template.content.cloneNode(true);
-
                     clone.querySelector(".SpillerNavn").textContent = personer.navn;
                     clone.querySelector(".SpillerImg").src = personer.imgURL;
                     clone.querySelector(".SpillerImg").alt = personer.navn;
-
-
                     displayAngriber.appendChild(clone);
                 }
 
@@ -377,14 +360,11 @@
                 if (personer.type == "traener") {
                     // console.log(personer);
                     let clone = templateStaben.content.cloneNode(true);
-
                     clone.querySelector(".StabenNavn").textContent = personer.navn;
                     clone.querySelector(".StabenEmailSpan").textContent = personer.mail;
                     clone.querySelector(".StabenMobilSpan").textContent = personer.tlf;
                     clone.querySelector(".StabenImg").src = personer.imgURL;
                     clone.querySelector(".StabenImg").alt = personer.navn;
-
-
                     displayTraner.appendChild(clone);
                 }
 
