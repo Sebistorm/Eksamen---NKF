@@ -2854,10 +2854,17 @@ h8 {
       background-size: cover;
       margin: 0px 9px; }
     .flex-containerFooter .FooterSocialeMedier a .FooterFacebook:hover,
-    .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar:hover {
+    .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar:hover,
+    .flex-containerFooter .FooterSocialeMedier a FooterInstagram:hover {
       opacity: 0.7; }
     .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
       background-image: url(./img/grafik/KampKlar.png);
+      width: 38px;
+      height: 38px;
+      background-size: cover;
+      margin: 0px 9px; }
+    .flex-containerFooter .FooterSocialeMedier a .FooterInstagram {
+      background-image: url(./img/grafik/Instagram.png);
       width: 38px;
       height: 38px;
       background-size: cover;
@@ -2890,6 +2897,11 @@ h8 {
         width: 38px;
         height: 38px;
         background-size: cover;
+        margin: 0px 9px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterInstagram {
+        width: 38px;
+        height: 38px;
+        background-size: cover;
         margin: 0px 9px; } }
 @media screen and (max-width: 881px) {
   .flex-containerFooter {
@@ -2917,6 +2929,9 @@ h8 {
         width: 68px;
         height: 68px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        width: 68px;
+        height: 68px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterInstagram {
         width: 68px;
         height: 68px; } }
 @media screen and (max-width: 401px) {
@@ -2948,6 +2963,9 @@ h8 {
         width: 68px;
         height: 68px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
+        width: 68px;
+        height: 68px; }
+      .flex-containerFooter .FooterSocialeMedier a .FooterInstagram {
         width: 68px;
         height: 68px; } }
 @font-face {
@@ -3145,16 +3163,15 @@ h8 {
       .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier {
         display: flex;
         height: 80px;
-        width: 100%; }
+        width: 100%;
+        justify-content: center; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
           display: flex;
           justify-content: flex-end;
-          width: 512px;
           height: 80px;
-          width: 50%;
-          margin-right: 10px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
-            background-image: url(../img/grafik/facebookIcon.png);
+            background-image: url(./img/grafik/facebookIcon.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 40px;
@@ -3165,15 +3182,27 @@ h8 {
           display: flex;
           justify-content: flex-start;
           height: 80px;
-          width: 50%;
-          margin-left: 10px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg {
-            background-image: url(../img/grafik/KampKlar.png);
+            background-image: url(./img/grafik/KampKlar.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 40px;
             height: 40px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg:hover {
+            opacity: 0.7; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram {
+          display: flex;
+          justify-content: flex-start;
+          height: 80px;
+          margin: 0px 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg {
+            background-image: url(./img/grafik/Instagram.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg:hover {
             opacity: 0.7; }
 
   .active {
@@ -3225,14 +3254,20 @@ h8 {
         top: 996px;
         margin-bottom: 40px; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
-          margin-right: 18px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
             width: 65px;
             height: 65px; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar {
           height: 80px;
-          margin-left: 18px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg {
+            width: 65px;
+            height: 65px; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram {
+          height: 80px;
+          margin: 0px 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg {
             width: 65px;
             height: 65px; } }
 @media screen and (max-width: 501px) {

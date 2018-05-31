@@ -81,12 +81,21 @@ h8 {
             }
 
             .FooterFacebook:hover,
-            .FooterKampKlar:hover {
+            .FooterKampKlar:hover,
+            FooterInstagram:hover {
                 opacity: 0.7;
             }
 
             .FooterKampKlar {
                 background-image: url(./img/grafik/KampKlar.png);
+                width: 38px;
+                height: 38px;
+                background-size: cover;
+                margin: 0px 9px
+            }
+
+            .FooterInstagram {
+                background-image: url(./img/grafik/Instagram.png);
                 width: 38px;
                 height: 38px;
                 background-size: cover;
@@ -139,6 +148,13 @@ h8 {
 
                 .FooterKampKlar {
                     background-image: url(./img/grafik/KampKlar.png);
+                    width: 38px;
+                    height: 38px;
+                    background-size: cover;
+                    margin: 0px 9px
+                }
+
+                .FooterInstagram {
                     width: 38px;
                     height: 38px;
                     background-size: cover;
@@ -197,6 +213,11 @@ h8 {
                     width: 68px;
                     height: 68px;
                 }
+
+                .FooterInstagram {
+                    width: 68px;
+                    height: 68px;
+                }
             }
         }
     }
@@ -251,6 +272,11 @@ h8 {
                 }
 
                 .FooterKampKlar {
+                    width: 68px;
+                    height: 68px;
+                }
+
+                .FooterInstagram {
                     width: 68px;
                     height: 68px;
                 }

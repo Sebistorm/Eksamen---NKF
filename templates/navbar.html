@@ -8,9 +8,20 @@
   font-family: Overskritt;
   src: url(../fonts/BloggerSans.woff);
   font-weight: 400; }
+@font-face {
+  font-family: Broodtekst;
+  src: url(../fonts/MuseoSans_500-webfont.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Overskritt;
+  src: url(../fonts/BloggerSans.woff);
+  font-weight: 400; }
 p,
 a,
-span {
+span,
+ul,
+li,
+div {
   font-family: Broodtekst, sans-serif !important; }
 
 h1,
@@ -184,16 +195,15 @@ h8 {
       .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier {
         display: flex;
         height: 80px;
-        width: 100%; }
+        width: 100%;
+        justify-content: center; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
           display: flex;
           justify-content: flex-end;
-          width: 512px;
           height: 80px;
-          width: 50%;
-          margin-right: 10px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
-            background-image: url(../img/grafik/facebookIcon.png);
+            background-image: url(./img/grafik/facebookIcon.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 40px;
@@ -204,15 +214,27 @@ h8 {
           display: flex;
           justify-content: flex-start;
           height: 80px;
-          width: 50%;
-          margin-left: 10px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg {
-            background-image: url(../img/grafik/KampKlar.png);
+            background-image: url(./img/grafik/KampKlar.png);
             background-repeat: no-repeat;
             background-size: contain;
             width: 40px;
             height: 40px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg:hover {
+            opacity: 0.7; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram {
+          display: flex;
+          justify-content: flex-start;
+          height: 80px;
+          margin: 0px 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg {
+            background-image: url(./img/grafik/Instagram.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg:hover {
             opacity: 0.7; }
 
   .active {
@@ -264,14 +286,20 @@ h8 {
         top: 996px;
         margin-bottom: 40px; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook {
-          margin-right: 18px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Facebook .FacebookImg {
             width: 65px;
             height: 65px; }
         .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar {
           height: 80px;
-          margin-left: 18px; }
+          margin: 0px 10px; }
           .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .KampKlar .KampKlarImg {
+            width: 65px;
+            height: 65px; }
+        .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram {
+          height: 80px;
+          margin: 0px 10px; }
+          .wrapper.responsive .NavbarOverlay .flex-containerSocialeMedier .Instagram .InstagramImg {
             width: 65px;
             height: 65px; } }
 @media screen and (max-width: 501px) {
@@ -355,13 +383,19 @@ h8 {
 
             <div class="flex-containerSocialeMedier">
                 <div class="Facebook">
-                    <a target="_blank" href="https://da-dk.facebook.com/BetterHome.Today/">
+                    <a target="_blank" href="https://www.facebook.com/NivaaKokkedalFK/">
                         <div class="FacebookImg"></div>
                     </a>
                 </div>
                 <div class="KampKlar">
-                    <a target="_blank" href="https://www.youtube.com/channel/UCbE2QI4Zu6ZBiXnbkdKJ_dA">
+                    <a target="_blank" href="https://mit.dbu.dk/Login.aspx?ReturnUrl=%2fkampklar">
                         <div class="KampKlarImg"></div>
+                    </a>
+                </div>
+                
+                        <div class="Instagram">
+                    <a target="_blank" href="https://www.instagram.com/nivaakokkedalfk/">
+                        <div class="InstagramImg"></div>
                     </a>
                 </div>
             </div>
