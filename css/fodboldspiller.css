@@ -49,6 +49,13 @@ body {
     width: 100%;
     height: 800px;
     flex-wrap: wrap; }
+    .flex-containerMenuer .ContainerMenu .FodboldSektion {
+      background-image: url(../img/fodbold/fodboldSplash.jpg);
+      object-fit: cover;
+      background-image: url(../img/forside/splash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
     .flex-containerMenuer .ContainerMenu .FodboldSektion,
     .flex-containerMenuer .ContainerMenu .NyhederSektion,
     .flex-containerMenuer .ContainerMenu .EventSektion,

@@ -66,6 +66,15 @@ body {
         height: 800px;
         flex-wrap: wrap;
 
+        .FodboldSektion {
+            background-image: url(../img/fodbold/fodboldSplash.jpg);
+            object-fit: cover;
+            background-image: url(../img/forside/splash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
         .FodboldSektion,
         .NyhederSektion,
         .EventSektion,
