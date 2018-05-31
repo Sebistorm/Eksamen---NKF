@@ -6,6 +6,14 @@
   font-family: Overskritt;
   src: url(../fonts/BloggerSans.woff);
   font-weight: 400; }
+@font-face {
+  font-family: Broodtekst;
+  src: url(../fonts/MuseoSans_500-webfont.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Overskritt;
+  src: url(../fonts/BloggerSans.woff);
+  font-weight: 400; }
 p,
 a,
 span,
@@ -2460,6 +2468,18 @@ body {
   .flex-ContainerTraeningstiderSPlash .TraeningstiderSplash h1 {
     font-size: 40px; }
 
+  .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderBane {
+    width: 20%; }
+
+  .flex-ContainerTraeningstider .TraeningstiderContainer .TraeningstiderHeaders .TraeningstiderTid {
+    width: 35%; }
+
+  .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderBaneNr {
+    width: 20%; }
+
+  .flex-ContainerTraeningstider .TraeningstiderContainer .ContainerForInfo .TraeningstiderTidspunkt {
+    width: 35%; }
+
   .flex-ContainerTraeningstider h2 {
     font-size: 40px;
     margin: 0px 0px 30px 1%;
@@ -2742,6 +2762,14 @@ body {
   font-family: Overskritt;
   src: url(../fonts/BloggerSans.woff);
   font-weight: 400; }
+@font-face {
+  font-family: Broodtekst;
+  src: url(../fonts/MuseoSans_500-webfont.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Overskritt;
+  src: url(../fonts/BloggerSans.woff);
+  font-weight: 400; }
 p,
 a,
 span,
@@ -2845,13 +2873,13 @@ h8 {
     .flex-containerFooter .FooterSocialeMedier {
       margin-right: 10px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
-        background-image: url(../img/grafik/facebookIcon.png);
+        background-image: url(./img/grafik/facebookIcon.png);
         width: 38px;
         height: 38px;
         background-size: cover;
         margin: 0px 9px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
-        background-image: url(../img/grafik/KampKlar.png);
+        background-image: url(./img/grafik/KampKlar.png);
         width: 38px;
         height: 38px;
         background-size: cover;
@@ -2877,7 +2905,7 @@ h8 {
         font-size: 20px;
         margin: 0px 0px 10px; }
     .flex-containerFooter .FooterSocialeMedier {
-      margin: 30px 0px 0px; }
+      margin: 30px 0px 30px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
         width: 68px;
         height: 68px; }
@@ -2885,6 +2913,9 @@ h8 {
         width: 68px;
         height: 68px; } }
 @media screen and (max-width: 401px) {
+  .flex-containerFooter .FooterTextContainer {
+    padding: 0px 10px; }
+
   .flex-containerFooter {
     flex-direction: column;
     padding: 10px 0px; }
@@ -2905,13 +2936,21 @@ h8 {
         font-size: 16px;
         margin: 0px 0px 10px; }
     .flex-containerFooter .FooterSocialeMedier {
-      margin: 30px 0px 0px; }
+      margin: 30px 0px 30px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterFacebook {
         width: 68px;
         height: 68px; }
       .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
         width: 68px;
         height: 68px; } }
+@font-face {
+  font-family: Broodtekst;
+  src: url(../fonts/MuseoSans_500-webfont.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Overskritt;
+  src: url(../fonts/BloggerSans.woff);
+  font-weight: 400; }
 @font-face {
   font-family: Broodtekst;
   src: url(../fonts/MuseoSans_500-webfont.woff);

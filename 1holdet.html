@@ -104,7 +104,7 @@
     <section class="flex-ContainerStilling">
         <div class="ContainerStilling">
             <h2>Stilling</h2>
-            <table>
+            <table class="TableEffekt">
                 <tr class="TabelOverskrifter">
                     <th class="SetWidthPos">Pos</th>
                     <th class="SetWidthHold">Hold</th>
@@ -276,7 +276,7 @@
     </footer-section>
 
 
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="script/main.js"></script>
 
     <script>
@@ -466,6 +466,42 @@
             kommendeKampeContainer.style.display = "flex"
         })
 
+        // scrollReveal
+        window.sr = ScrollReveal();
+        sr.reveal('.MaalmaandContainer', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('.ForsvarContainer', {
+            duration: 2000,
+            origin: 'top'
+        });
+
+        sr.reveal('.MidtbaneContainer', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('.AngriberContainer', {
+            duration: 2000,
+            origin: 'top'
+        });
+
+        sr.reveal('.StabenContainer', {
+            duration: 2000,
+            origin: 'top'
+        });
+
+        sr.reveal('.KommendeKampe', {
+            duration: 2000,
+            origin: 'top'
+        });
+
+        sr.reveal('.TableEffekt', {
+            duration: 2000,
+            origin: 'top'
+        });
     </script>
 </body>
 
