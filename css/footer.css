@@ -92,7 +92,7 @@ h8 {
       margin: 0px 9px; }
     .flex-containerFooter .FooterSocialeMedier a .FooterFacebook:hover,
     .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar:hover,
-    .flex-containerFooter .FooterSocialeMedier a FooterInstagram:hover {
+    .flex-containerFooter .FooterSocialeMedier a .FooterInstagram:hover {
       opacity: 0.7; }
     .flex-containerFooter .FooterSocialeMedier a .FooterKampKlar {
       background-image: url(./img/grafik/KampKlar.png);
