@@ -700,7 +700,7 @@ body {
     .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
-    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn {
       font-size: 30px;
       border: black solid 2px;
       padding: 10px 20px;
@@ -710,7 +710,7 @@ body {
     .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn:hover,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn:hover,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn:hover,
-    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe:hover {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn:hover {
       background-color: grey;
       color: #fbfbfb; }
     .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerMenuFokus {
@@ -1953,7 +1953,7 @@ body {
       max-width: 160px;
       padding: 10px 0px;
       text-align: center; }
-    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn {
       width: 40%;
       max-width: 280px;
       padding: 10px 0px;
@@ -1969,13 +1969,13 @@ body {
   .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
   .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
   .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
-  .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+  .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn {
     font-size: 22px; } }
 @media screen and (max-width: 591px) {
   .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
   .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
   .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
-  .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+  .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn {
     font-size: 18px; } }
 @media screen and (max-width: 501px) {
   .flex-ContainerFodboldspillerSPlash .foorsteHoldetSplash h1 {
@@ -1987,7 +1987,7 @@ body {
     .flex-ContainerSpillerMenu .SpillerMenuContainer .SpillerneBtn,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StabenBtn,
     .flex-ContainerSpillerMenu .SpillerMenuContainer .StillingBtn,
-    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampe {
+    .flex-ContainerSpillerMenu .SpillerMenuContainer .KommendeKampeBtn {
       width: 100%;
       font-size: 30px;
       max-width: unset; }

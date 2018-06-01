@@ -41,7 +41,7 @@
             <div class="SpillerneBtn SpillerMenubtn SpillerMenuFokus">Spillerne</div>
             <div class="StabenBtn SpillerMenubtn">Staben</div>
             <div class="StillingBtn SpillerMenubtn">Stilling</div>
-            <div class="KommendeKampe SpillerMenubtn">Kommende Kampe</div>
+            <div class="KommendeKampeBtn SpillerMenubtn">Kommende Kampe</div>
         </div>
     </section>
 
@@ -443,7 +443,7 @@
         })
 
         // kommende kampe btn
-        let kommendeKampeBtn = document.querySelector(".KommendeKampe");
+        let kommendeKampeBtn = document.querySelector(".KommendeKampeBtn");
         kommendeKampeBtn.addEventListener("click", e => {
             // skifter fokus
             let spillermenuBtns = document.querySelectorAll(".SpillerMenubtn");
@@ -502,6 +502,7 @@
             duration: 2000,
             origin: 'top'
         });
+
     </script>
 </body>
 
