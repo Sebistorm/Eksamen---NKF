@@ -2579,7 +2579,8 @@ body {
       font-weight: 800;
       color: #fbfbfb;
       z-index: 2;
-      margin: 22vh 0px; }
+      margin: 22vh 0px;
+      text-shadow: 4px 4px 8px #000000; }
   .flex-ContainerNyhederSPlash .SplashOverlay {
     height: 100%;
     width: 100%;
