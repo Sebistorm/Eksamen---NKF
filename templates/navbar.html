@@ -62,14 +62,16 @@ h8 {
     width: 30%;
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .topnav .BetterHomeLogo .BetterHomeLogoImg {
       background-image: url(./img/grafik/logo_400_farve_png.png);
       height: 80px;
       width: 80px;
       background-repeat: no-repeat;
       background-size: contain;
-      margin-left: 59px; }
+      margin-left: 59px;
+      cursor: pointer; }
   .topnav .MenuPunkterParent {
     width: 70%;
     display: flex;
@@ -100,6 +102,24 @@ h8 {
     .topnav .MenuPunkterParent .KampKlar:hover {
       background-color: unset !important;
       opacity: 0.7; }
+  .topnav .LandingPages {
+    position: absolute;
+    z-index: 100;
+    top: 105px;
+    background-color: #001E35;
+    text-decoration: none;
+    margin-top: 15px;
+    border-top: 2px solid white; }
+    .topnav .LandingPages a {
+      text-decoration: none;
+      color: white; }
+      .topnav .LandingPages a p {
+        padding: 15px;
+        margin: 0px;
+        border-bottom: 2px solid white; }
+      .topnav .LandingPages a p:hover {
+        background-color: white;
+        color: black; }
   .topnav .icon {
     display: none; }
     .topnav .icon .burgermenu {
@@ -131,6 +151,21 @@ h8 {
       height: 60px;
       width: 60px;
       margin-left: 32px; }
+    .topnav .LandingPages {
+      position: absolute;
+      z-index: 100;
+      top: 78px;
+      background-color: #001E35;
+      text-decoration: none;
+      margin-top: 15px;
+      border-top: 2px solid white; }
+      .topnav .LandingPages a {
+        text-decoration: none;
+        color: white; }
+        .topnav .LandingPages a p {
+          padding: 15px;
+          margin: 0px;
+          border-bottom: 2px solid white; }
 
   .topnav .MenuPunkterParent {
     display: none; }
@@ -252,6 +287,21 @@ h8 {
     .topnav .BetterHomeLogo .BetterHomeLogoImg {
       height: 70px;
       width: 70px; }
+    .topnav .LandingPages {
+      position: absolute;
+      z-index: 100;
+      top: 107px;
+      background-color: #001E35;
+      text-decoration: none;
+      margin-top: 15px;
+      border-top: 2px solid white; }
+      .topnav .LandingPages a {
+        text-decoration: none;
+        color: white; }
+        .topnav .LandingPages a p {
+          padding: 15px;
+          margin: 0px;
+          border-bottom: 2px solid white; }
 
   .wrapper.responsive {
     height: 100%; }
@@ -336,9 +386,10 @@ h8 {
  <header>
         <nav class="topnav" id="myTopnav">
             <div class="BetterHomeLogo">
-                <a href="fodboldspiller.html">
-                    <div class="BetterHomeLogoImg"></div>
-                </a>
+               
+            <div class="BetterHomeLogoImg"></div>
+               
+
             </div>
             <div class="MenuPunkterParent" id="container-menuPunkter">
                 <a href="fodbold.html" class="HvadTilbyderVi">Fodbold</a>
@@ -353,7 +404,27 @@ h8 {
                 <div class="burgermenu"></div>
                 <div class="burgermenu"></div>
             </div>
+            
+            <div class="LandingPages" style="display: none;">
+                <a href="#">
+                    <p>Fodboldspiller</p>
+                </a>
+
+                <a href="#">
+                    <p>Træner</p>
+                </a>
+
+                <a href="#">
+                    <p>Klubben</p>
+                </a>
+
+                <a href="#">
+                    <p>Praktisk info</p>
+                </a>
+            </div>
         </nav>
+        
+        
 
     </header>
 
@@ -442,6 +513,27 @@ h8 {
                         }
                     }
                 })();
+
+                let NKFLogo = shadowRoot.querySelector(".BetterHomeLogoImg")
+
+
+
+                NKFLogo.addEventListener("click", e => {
+                    let Landingpages = shadowRoot.querySelector(".LandingPages");
+                    if (Landingpages.style.display == "block") {
+                        Landingpages.style.display = "none";
+                    } else if (Landingpages.style.display == "none") {
+                        Landingpages.style.display = "block";
+                    }
+                });
+
+
+
+
+
+
+
+
                 // custom javascript slut
 
                 const supportsNativeShadowDom = !!HTMLElement.prototype.attachShadow;
