@@ -112,7 +112,7 @@ h8 {
       text-decoration: none;
       color: white; }
       .topnav .LandingPages a p {
-        padding: 15px;
+        padding: 15px 28.5px;
         margin: 0px;
         border-bottom: 2px solid white; }
       .topnav .LandingPages a p:hover {
@@ -135,7 +135,26 @@ h8 {
     margin: 0; }
 
   .topnav .BetterHomeLogo .BetterHomeLogoImg {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .topnav .LandingPages {
+    position: absolute;
+    z-index: 100;
+    top: 105px;
+    background-color: #001E35;
+    text-decoration: none;
+    margin-top: 15px;
+    border-top: 2px solid white; }
+    .topnav .LandingPages a {
+      text-decoration: none;
+      color: white; }
+      .topnav .LandingPages a p {
+        padding: 15px;
+        margin: 0px;
+        border-bottom: 2px solid white; }
+      .topnav .LandingPages a p:hover {
+        background-color: white;
+        color: black; } }
 @media screen and (max-width: 1025px) {
   .topnav {
     height: 93px; }

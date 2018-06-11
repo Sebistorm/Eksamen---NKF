@@ -107,7 +107,7 @@ h8 {
             color: white;
 
             p {
-                padding: 15px;
+                padding: 15px 28.5px;
                 margin: 0px;
                 border-bottom: 2px solid white;
             }
@@ -145,6 +145,32 @@ h8 {
 
     .topnav .BetterHomeLogo .BetterHomeLogoImg {
         margin-left: 20px;
+    }
+
+    .topnav .LandingPages {
+        position: absolute;
+        z-index: 100;
+        top: 105px;
+        background-color: #001E35;
+        text-decoration: none;
+        margin-top: 15px;
+        border-top: 2px solid white;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            p {
+                padding: 15px;
+                margin: 0px;
+                border-bottom: 2px solid white;
+            }
+
+            p:hover {
+                background-color: white;
+                color: black;
+            }
+        }
     }
 }
 
